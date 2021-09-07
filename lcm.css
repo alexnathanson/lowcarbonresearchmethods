@@ -14,6 +14,8 @@ graph:  grey (low opacityt);
 body{
 	background-color: #D6D6D6;
 	margin: 0;
+	font-family: Helvetica, sans-serif;
+
 }
 
 #headerContainer{
@@ -23,19 +25,39 @@ body{
 	z-index: 1;
 }
 
-#headerContainer img{
+/*the square version of the logo - comment out for circle version*/
+/*#headerContainer img{
 	position: relative;
-	/*max-height: 175px;
-	min-height: 100px;*/
 	top:  0;
 	height: auto;
 	left: 0;
 	z-index: 1;
 	background-color: black;
 	width: 10%;
-	/*max-width: 175px;
-	min-width: 100px;*/
 }
+*/
+
+/* circle version of logo - comment out for square version*/
+#logoContainer{
+	position: relative;
+	top:  calc(100vw * -.04);/*version I sent Anne was 5% and 15% */
+	left: -4%;
+	width: 14%;
+	height: calc(100vw * .14);
+	z-index: 1;
+    border-radius: 50%;
+    background-color: black;
+}
+
+#logoContainer img{
+	position: absolute;
+	top:  28%;
+	height: auto;
+	left: 29%;
+	z-index: 1;
+	width: 60%;
+}
+/*end circle version of logo code*/
 
 #header-local {
 	position: absolute;
@@ -68,7 +90,8 @@ body{
 	background: #516666;
 	height: calc(100vw * .04);
 	top:  calc(100vw * .035);
-	left: calc(100vw * .09);;
+	/*left: calc(100vw * .09);*/ /*this is for square version*/
+	left: calc(100vw * .079); /* this is for round version*/
 	padding: 5px;
 	width: 85%;
 	display: flex;
@@ -143,11 +166,24 @@ body{
 	text-align: center;
 	padding-top: 10px;
 	padding-bottom: 20px;
-/*	border-style: solid;
-*/	bottom: 0;
+	bottom: 0;
 	width: 100%;
 	background-color: black;
 	color:  white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-content: center;
+  	justify-content: space-evenly;
+}
+
+#footer a {
+/*	text-decoration: none;
+*/	color: white;
+}
+
+#footer-nav {
+	display: none;
 }
 
 /****CONTENT********/
@@ -382,6 +418,41 @@ body{
 }
 
 
+@media (max-width: 1300px) {
+
+	#header-local {
+		position: absolute;
+		border-style: solid;
+		border-width: 1px;
+		height: calc(100vw * .028);
+		padding: 1px;
+		left: 12%;
+		top: 9px;
+		width: 88%;
+		background-color: #82E6E8;
+		display: flex;
+		align-items: center;
+	  	justify-content: space-evenly;
+	}
+
+	#header-nav {
+		position: absolute;
+		border-style: solid;
+		border-width: 1px;
+		background: #516666;
+		height: calc(100vw * .04);
+		top:  calc(100vw * .035);
+		left: calc(100vw * .079);
+		padding-top: 1px;
+		padding-left: 5px;
+		padding-right: 2px;
+		width: 88%;
+		display: flex;
+		align-items: center;
+	  	justify-content: space-evenly;
+	}
+}
+
 @media (max-width: 1000px) {
 	body{
 		background-color: purple;
@@ -394,7 +465,7 @@ body{
 		padding-bottom: 0px;
 	}
 
-	#headerContainer img{
+/*	#headerContainer img{
 		position: absolute;
 		top:  0;
 		left: 0;
@@ -403,7 +474,31 @@ body{
 		height: auto;
 		width: 20%;
 		height: calc(100vw * .2);
+	}*/
+
+
+	/* circle version of logo - comment out for square version*/
+	#logoContainer{
+		position: relative;
+		top:  calc(100vw * -.09);/*version I sent Anne was 5% and 15% */
+		left: -9%;
+		width: 28%;
+		height: calc(100vw * .28);
+		z-index: 1;
+	    border-radius: 50%;
+	    background-color: darkorange;
 	}
+
+	#logoContainer img{
+		position: absolute;
+		top:  28%;
+		height: auto;
+		left: 31%;
+		z-index: 1;
+		width: 60%;
+	}
+	/*end circle version of logo code*/
+
 
 	#header-background {
 		display: none;
@@ -428,8 +523,8 @@ body{
 		padding-left: 3%;
 		padding-right: 0px;
 		top:  calc(100vw * .025);
-		left: 20%;
-		width: calc(77% - 4em);
+		left: 17%;
+		width: calc(80% - 4em);
 		background-color: black;
 		color: white;
 		display: flex;
@@ -454,6 +549,18 @@ body{
 	#menu a {
 		text-decoration: none;
 		color: white;
+	}
+
+	#footer-nav {
+		position: relative;
+		padding: 5px;
+		width: 85%;
+		display: flex;
+		align-items: center;
+		align-content: center;
+	  	justify-content: space-evenly;
+		flex-direction: column;
+		background-color: black;
 	}
 
 	.rRow{
@@ -483,5 +590,14 @@ body{
 		background-color: #D3E8E8;
 		border-style: solid;
 		border-width: 1px;
+	}
+
+	.event{
+	/*	border-top: solid;
+	*/	
+		margin-bottom: 50px;
+		padding: 10px;
+		width: 90%;	
+		background-color: #D3E8E8;
 	}
 }
