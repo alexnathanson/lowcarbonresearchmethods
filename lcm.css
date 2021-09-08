@@ -227,6 +227,7 @@ body{
 	max-width: 50%;
 }
 
+/*EVENT STUFF TO BE CHANGED TO CONTENTLIST*/
 #eventContainer{
 	display: flex;
 	flex-direction: column;
@@ -247,6 +248,30 @@ body{
 	border-bottom: solid;
 	border-width: 1px;
 }
+
+/*EVENT STUFF END*/
+
+#contentItemContainer{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: center;
+}
+
+.contentItem{
+/*	border-top: solid;
+*/	
+	margin-bottom: 50px;
+	padding: 10px;
+	width: 75%;	
+	background-color: #D3E8E8;
+}
+
+.contentItem h2 {
+	border-bottom: solid;
+	border-width: 1px;
+}
+
 
 /****HISTORY BAR****/
 
