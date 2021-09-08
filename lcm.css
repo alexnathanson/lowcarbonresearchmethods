@@ -272,6 +272,11 @@ body{
 	border-width: 1px;
 }
 
+.contentItem img {
+	float: right;
+	max-width: 50%;
+}
+
 
 /****HISTORY BAR****/
 
