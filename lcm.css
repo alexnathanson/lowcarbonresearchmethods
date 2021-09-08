@@ -277,6 +277,21 @@ body{
 	max-width: 50%;
 }
 
+.tableOfContents {
+	padding: 5px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+
+.tableOfContents a {
+	padding-left: 1%;
+	padding-right: 1%;
+}
+
+
 
 /****HISTORY BAR****/
 
