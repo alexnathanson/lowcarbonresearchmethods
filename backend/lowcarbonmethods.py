@@ -7,11 +7,13 @@ dst = "/home/pi/local/www/lowcarbonresearchmethods/output"
 battPercentage = "0%"
 weatherToday = "sunny"
 weatherTomorrow = "cloudy"
+localTime = "3pm"
 
 swapDictionary = { 
+	"%%TIME%%":localTime,
 	"%%BATTERY%%": battPercentage,
-	"%%W_TODAY%%": weatherToday,
-	"%%W_TOMORROW%%": weatherTomorrow
+	"%%WEATHER_TODAY%%": weatherToday,
+	"%%WEATHER_TOMORROW%%": weatherTomorrow
 	}
 
 SS = StaticSiteUpdater(src, dst, swapDictionary)

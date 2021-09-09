@@ -115,12 +115,12 @@ body{
 
 #batPercent {
 	position: absolute;
-	left: 20%/*max(calc(20% - 3em),19em)*/;
+	left: %%BATTERY%% /*max(calc(20% - 3em),19em)*/;
 	bottom: 5%;
 }
 
 #batBar{
-	width: 20%;
+	width: %%BATTERY%%; 
 	float: left;
 	opacity: 50%;
 	height: 100%;
