@@ -7,6 +7,7 @@ src = "/home/pi/local/www/lowcarbonresearchmethods/templates"
 dst = "/home/pi/local/www/lowcarbonresearchmethods"
 
 getServer = "http://localhost"
+#getServer = "http://www.solarprotocol.net"
 
 def getRequest(url):
 	try:			
@@ -90,7 +91,7 @@ powerPercentage = [str(100.0 * (p / moduleSize)) + "%" for p in avgPVPower]
 
 #add these average power stats to the dictionary
 for p in range(len(powerPercentage)):
-	swapDictionary['%%'+ str(p + 1) + 'H%%'] = powerPercentage[p]
+	swapDictionary['%%'+ str(24 - (p + 1)) + 'H%%'] = powerPercentage[p]
 
 print(swapDictionary)
 
