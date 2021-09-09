@@ -42,8 +42,8 @@ class StaticSiteUpdater:
 	#key and value can be individual strings or can I pass in a dict?
 	def findReplace(self,inputString, swapPairs, srcFileName):
 
-		for placeholder, replacement in swapPairs:
-			inputString = inputString.replace(placeholder,replacement)
+		for placeholder, replacement in swapPairs.items():
+			inputString = inputString.replace(placeholder, replacement)
 		self.saveFile(inputString, srcFileName)
 
 
