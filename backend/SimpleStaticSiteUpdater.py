@@ -6,7 +6,7 @@ class StaticSiteUpdater:
 		self.srcDirectory = aSrcDirectory
 		self.dstDirectory = aDstDirectory
 		# a dictionary of placeholder: replacement pairs
-		self.swapDict = {}
+		self.swapDict = swapDict
 
 
 	#recursively gets all files from dirctory including subdirectory
@@ -40,9 +40,9 @@ class StaticSiteUpdater:
 	#replaces strings from swapList dictionary and sends the output to saveFile()
 	#swapList is a dictionary
 	#key and value can be individual strings or can I pass in a dict?
-	def findReplace(self,inputString, swapList, srcFileName):
+	def findReplace(self,inputString, swapPairs, srcFileName):
 
-		for placeholder, replacement in self.swapDict:
+		for placeholder, replacement in swapPairs:
 			inputString = inputString.replace(placeholder,replacement)
 		self.saveFile(inputString, srcFileName)
 
