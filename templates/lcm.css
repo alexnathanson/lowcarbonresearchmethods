@@ -1,0 +1,648 @@
+/*
+https://coolors.co/82e6e8-d6d6d6-04bcbf-4aedf0-516666-d3e8e8
+Electric Blue:  82E6E8 - local info, time bar
+Light Gray: D6D6D6 - background;
+Maximum Blue GReen:  04BCBF; - bat bar
+Fluerescent Blue:  4AEDF0;
+Deep Space Sparkle:  516666; Nav
+Light cyan: D3E8E8; content
+
+lightgray:  bat back bar
+graph:  grey (low opacityt);
+*/
+
+body{
+	background-color: #D6D6D6;
+	margin: 0;
+	font-family: Helvetica, sans-serif;
+
+}
+
+#headerContainer{
+	position: fixed;
+	top:  0;
+	width: 100%;
+	z-index: 1;
+}
+
+/*the square version of the logo - comment out for circle version*/
+/*#headerContainer img{
+	position: relative;
+	top:  0;
+	height: auto;
+	left: 0;
+	z-index: 1;
+	background-color: black;
+	width: 10%;
+}
+*/
+
+/* circle version of logo - comment out for square version*/
+#logoContainer{
+	position: relative;
+	top:  calc(100vw * -.04);/*version I sent Anne was 5% and 15% */
+	left: -4%;
+	width: 14%;
+	height: calc(100vw * .14);
+	z-index: 1;
+    border-radius: 50%;
+    background-color: black;
+}
+
+#logoContainer img{
+	position: absolute;
+	top:  28%;
+	height: auto;
+	left: 29%;
+	z-index: 1;
+	width: 60%;
+}
+/*end circle version of logo code*/
+
+#header-local {
+	position: absolute;
+	border-style: solid;
+	border-width: 1px;
+	height: calc(100vw * .030);
+	padding: 5px;
+	left: 15%;
+	top: 10px;
+	width: 85%;
+	background-color: #82E6E8;
+	display: flex;
+	align-items: center;
+  	justify-content: space-evenly;
+}
+
+#header-background {
+	position: absolute;
+	background-color: #D6D6D6; /*make same as body*/
+	/*the height of this should be the same as header-local + 22px*/
+	height: calc((100vw * .030) + 22px);
+	top: 0px;
+	width: 100%;
+}
+
+#header-nav {
+	position: absolute;
+	border-style: solid;
+	border-width: 1px;
+	background: #516666;
+	height: calc(100vw * .04);
+	top:  calc(100vw * .035);
+	/*left: calc(100vw * .09);*/ /*this is for square version*/
+	left: calc(100vw * .079); /* this is for round version*/
+	padding: 5px;
+	width: 85%;
+	display: flex;
+	align-items: center;
+  	justify-content: space-evenly;
+}
+
+#header-bat {
+	position: absolute;
+	border-style: solid;
+	border-width: 1px;
+	background-color: lightgray;
+	height: calc(100vw * .027);
+	padding: 5px;
+	width: 86%;
+	top:  calc((100vw * .075) + 2px);
+	left: 5%;
+	vertical-align: text-top;
+	padding: 0;
+}
+
+#batPercent {
+	position: absolute;
+	left: 20%/*max(calc(20% - 3em),19em)*/;
+	bottom: 5%;
+}
+
+#batBar{
+	width: 20%;
+	float: left;
+	opacity: 50%;
+	height: 100%;
+	background-color: #04BCBF;
+}
+
+/*.statName{
+	position: absolute;
+	bottom: 5%;
+	padding-left: 5px;
+}*/
+
+.navLink {
+	top:  50%;
+/*	position: relative;
+*/	float: left;
+	/*padding: 5%;*/
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.navLink a {
+	text-decoration: none;
+	color: white;
+}
+
+#onPage a{
+	text-decoration: underline;
+}
+
+.serverLocation{
+	float: left;
+/*	width: 33%;
+*/	top:  50%;
+}
+
+#menu{
+	display: none;
+}
+
+#footer {
+	position: relative;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	bottom: 0;
+	width: 100%;
+	background-color: black;
+	color:  white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-content: center;
+  	justify-content: space-evenly;
+}
+
+#footer a {
+/*	text-decoration: none;
+*/	color: white;
+}
+
+#footer-nav {
+	display: none;
+}
+
+/****CONTENT********/
+
+
+#content{
+	position: absolute;
+	opacity: 85%;
+	width: 100%;
+	top: calc(100vw * .15);
+	display: flex;
+	flex-direction: column;
+  	justify-content: center;
+  	align-items: center;
+}
+
+/*.profileContainer{
+	display: flex;
+	flex-wrap: wrap;
+}*/
+
+.rRow{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-content: center;
+}
+
+.profile{
+	float: left;
+	width: 25%;
+	margin: 1%;
+	padding: 5px;
+	background-color: #D3E8E8;
+	border-style: solid;
+	border-width: 1px;
+}
+
+.profile img {
+	float: right;
+	max-width: 50%;
+}
+
+/*EVENT STUFF TO BE CHANGED TO CONTENTLIST*/
+#eventContainer{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: center;
+}
+
+.event{
+/*	border-top: solid;
+*/	
+	margin-bottom: 50px;
+	padding: 10px;
+	width: 75%;	
+	background-color: #D3E8E8;
+}
+
+.event h2 {
+	border-bottom: solid;
+	border-width: 1px;
+}
+
+/*EVENT STUFF END*/
+
+#contentItemContainer{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: center;
+}
+
+.contentItem{
+/*	border-top: solid;
+*/	
+	margin-bottom: 50px;
+	padding: 10px;
+	width: 75%;	
+	background-color: #D3E8E8;
+}
+
+.contentItem h2 {
+	border-bottom: solid;
+	border-width: 1px;
+}
+
+.contentItem img {
+	float: right;
+	max-width: 50%;
+}
+
+.tableOfContents {
+	padding: 5px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+
+.tableOfContents a {
+	padding-left: 1%;
+	padding-right: 1%;
+}
+
+
+
+/****HISTORY BAR****/
+
+#graphContainer{
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	display: flex;
+		flex-direction: column;
+
+/*	background-color: purple;
+*/}
+
+/*container for entire bar graph*/
+#historyBar {
+	position: relative;
+	width: 100%;
+	bottom: 0;
+/*	height: 500px;*/
+	z-index: -1;
+}
+
+/*container for individual bars*/
+.hbarContainer{
+	position: relative;
+	height: 600px;
+	float: left;
+	width: 4.167%; /*this sets with of individual bars. must be changed when the number of bars changes*/
+}
+
+/*data bar*/
+.hbar{
+	width: 100%;
+	opacity: 30%;
+	background: grey;
+	bottom: 0;
+	position: absolute;
+	border-top: 1px solid;
+	border-left: 1px solid;
+	border-right: 1px solid;
+	box-sizing: border-box;
+}
+
+#hbar1 {
+	height: 20%;
+}
+
+#hbar2 {
+	height: 60%;
+}
+
+#hbar3 {
+	height: 20%;
+}
+
+#hbar4 {
+	height: 50%;
+}
+
+#hbar5 {
+	height: 40%;
+}
+
+#hbar6 {
+	height: 20%;
+}
+
+#hbar7 {
+	height: 60%;
+}
+
+#hbar8 {
+	height: 20%;
+}
+
+#hbar9 {
+	height: 50%;
+}
+
+#hbar10 {
+	height: 40%;
+}
+
+#hbar11 {
+	height: 20%;
+}
+
+#hbar12 {
+	height: 60%;
+}
+
+#hbar13 {
+	height: 20%;
+}
+
+#hbar14 {
+	height: 50%;
+}
+
+#hbar15 {
+	height: 40%;
+}
+
+#hbar16 {
+	height: 20%;
+}
+
+#hbar17 {
+	height: 60%;
+}
+
+#hbar18 {
+	height: 20%;
+}
+
+#hbar19 {
+	height: 50%;
+}
+
+#hbar20 {
+	height: 40%;
+}
+
+#hbar21 {
+	height: 60%;
+}
+
+#hbar22 {
+	height: 20%;
+}
+
+#hbar23 {
+	height: 50%;
+}
+
+#hbar24 {
+	height: 100%;
+}
+
+#time-container{
+	position: relative;
+	display: flex;
+	width: 100%;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: #82E6E8;
+}
+
+#twentyfour{
+	float: left;
+	text-align: left;
+	width: 31%;
+	padding-left: 2%;
+}
+
+#now {
+	float: right;
+	text-align: right;
+	width: 31%;
+	padding-right: 2%;
+}
+
+#twelve{
+	float: left;
+	text-align: center;
+	width: 33%;
+}
+
+
+@media (max-width: 1300px) {
+
+	#header-local {
+		position: absolute;
+		border-style: solid;
+		border-width: 1px;
+		height: calc(100vw * .028);
+		padding: 1px;
+		left: 12%;
+		top: 9px;
+		width: 88%;
+		background-color: #82E6E8;
+		display: flex;
+		align-items: center;
+	  	justify-content: space-evenly;
+	}
+
+	#header-nav {
+		position: absolute;
+		border-style: solid;
+		border-width: 1px;
+		background: #516666;
+		height: calc(100vw * .04);
+		top:  calc(100vw * .035);
+		left: calc(100vw * .079);
+		padding-top: 1px;
+		padding-left: 5px;
+		padding-right: 2px;
+		width: 88%;
+		display: flex;
+		align-items: center;
+	  	justify-content: space-evenly;
+	}
+}
+
+@media (max-width: 1000px) {
+	body{
+		background-color: purple;
+	}
+
+	#headerContainer{
+		background-color: black;
+		height: calc(100vw * .235);
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
+
+/*	#headerContainer img{
+		position: absolute;
+		top:  0;
+		left: 0;
+		z-index: 1;
+		background-color: black;
+		height: auto;
+		width: 20%;
+		height: calc(100vw * .2);
+	}*/
+
+
+	/* circle version of logo - comment out for square version*/
+	#logoContainer{
+		position: relative;
+		top:  calc(100vw * -.09);/*version I sent Anne was 5% and 15% */
+		left: -9%;
+		width: 28%;
+		height: calc(100vw * .28);
+		z-index: 1;
+	    border-radius: 50%;
+	    background-color: darkorange;
+	}
+
+	#logoContainer img{
+		position: absolute;
+		top:  28%;
+		height: auto;
+		left: 31%;
+		z-index: 1;
+		width: 60%;
+	}
+	/*end circle version of logo code*/
+
+
+	#header-background {
+		display: none;
+	}
+
+	#header-nav{
+		display: none;
+	}
+
+	#header-bat{
+		display: none;
+	}
+
+	#header-local{
+		border-style: none;
+		border-width: 0px;
+		/*max-height: 200px;
+		min-height: 100px;*/
+		height: calc(100vw * .2);
+		padding-top: 0px;
+		padding-bottom: 0px;
+		padding-left: 3%;
+		padding-right: 0px;
+		top:  calc(100vw * .025);
+		left: 17%;
+		width: calc(80% - 4em);
+		background-color: black;
+		color: white;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	  	justify-content: space-evenly;
+	}
+
+	#menu{
+		position: absolute;
+		top:  calc(100vw * .025);
+		right: 2.5%;
+		border-style: solid;
+		border-width: 1px;
+		border-color: white;
+		padding: 1px;
+		background-color: black;
+		color: white;
+		display: block;
+	}
+
+	#menu a {
+		text-decoration: none;
+		color: white;
+	}
+
+	#footer-nav {
+		position: relative;
+		padding: 5px;
+		width: 85%;
+		display: flex;
+		align-items: center;
+		align-content: center;
+	  	justify-content: space-evenly;
+		flex-direction: column;
+		background-color: black;
+	}
+
+	.rRow{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-content: center;
+		align-items: center;
+	}
+
+	#content{
+		position: absolute;
+		opacity: 85%;
+		width: 100%;
+		top: calc(100vw * .245);
+		display: flex;
+		flex-direction: column;
+	  	justify-content: center;
+	  	align-items: center;
+	  	align-content: center;
+	}
+
+	.profile{
+		width: 90%;
+		margin: 1%;
+		padding: 5px;
+		background-color: #D3E8E8;
+		border-style: solid;
+		border-width: 1px;
+	}
+
+	.event{
+	/*	border-top: solid;
+	*/	
+		margin-bottom: 50px;
+		padding: 10px;
+		width: 90%;	
+		background-color: #D3E8E8;
+	}
+}

@@ -2,16 +2,16 @@ import os
 
 
 class StaticSiteUpdater:
-	def __init__(self, aSrcDirectory, aDstDirectory):
+	def __init__(self, aSrcDirectory, aDstDirectory, swapDict):
 		self.srcDirectory = aSrcDirectory
 		self.dstDirectory = aDstDirectory
 		# a dictionary of placeholder: replacement pairs
-		self.swapList = {}
+		self.swapDict = {}
 
 	#accepts either key and value as string or 
 	#file can be either a single file as string or a list of strings
 	#key and value can be individual strings or can I pass in a dict?
-	def findReplace(self,inputString, swapDict, fileName):
+	def findReplace(self,inputString, swapList, fileName):
 		for placeholder, replacement in self.swapDict:
 			inputString.replace(placeholder,replacement)
 		saveFile(inputString, )
@@ -23,7 +23,7 @@ class StaticSiteUpdater:
 		try:
 			with open(aFile, r) as f:
 				fileContents = f.read()
-				findReplace(fileContents, self.swapList, aFile)
+				findReplace(fileContents, self.swapDict, aFile)
 				f.close()
 				
 		except:
