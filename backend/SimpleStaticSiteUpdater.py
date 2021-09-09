@@ -43,7 +43,7 @@ class StaticSiteUpdater:
 	def findReplace(self,inputString, swapPairs, srcFileName):
 
 		for placeholder, replacement in swapPairs.items():
-			inputString = inputString.replace(placeholder, replacement)
+			inputString = inputString.replace(str(placeholder), str(replacement))
 		self.saveFile(inputString, srcFileName)
 
 
