@@ -6,7 +6,7 @@ import json
 
 src = "/home/pi/local/www/lowcarbonresearchmethods/templates"
 #src = "D:/LowCarbonMethods/templates"
-dst = "/home/pi/local/www/lowcarbonresearchmethods/output"
+dst = "/home/pi/local/www/lowcarbonresearchmethods"
 
 # CC = ChargeControllerData("/home/pi/solar-protocol/charge-controller/data/tracerData"+ str(datetime.date.today()) +".csv")
 
