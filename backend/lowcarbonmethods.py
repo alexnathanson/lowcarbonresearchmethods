@@ -1,17 +1,12 @@
 import datetime
 from SimpleStaticSiteUpdater import StaticSiteUpdater
-#from CC import ChargeControllerData
 import requests
 import json
 
 src = "/home/pi/local/www/lowcarbonresearchmethods/templates"
-#src = "D:/LowCarbonMethods/templates"
 dst = "/home/pi/local/www/lowcarbonresearchmethods"
 
-# CC = ChargeControllerData("/home/pi/solar-protocol/charge-controller/data/tracerData"+ str(datetime.date.today()) +".csv")
-
 getServer = "http://localhost"
-#getServer = "http://www.solarprotocol.net"
 
 def getRequest(url):
 	try:			
@@ -24,14 +19,13 @@ def getRequest(url):
 	except:
 		print(err)
 
-battPercentage = 100 * float(getRequest(getServer + "/api/v1/chargecontroller.php?value=battery-percentage"))
-
-if battPercentage != 'None':
-	battPercentage = str(battPercentage) + "%"
+try:
+	battPercentage = str(100 * float(getRequest(getServer + "/api/v1/chargecontroller.php?value=battery-percentage"))) + "%"
 	battBar = battPercentage
-else:
+except:
 	battPercentage = "error"
 	battBar = "0%"
+
 
 localTime = datetime.datetime.today().strftime("%I:%M %p")
 
@@ -54,8 +48,7 @@ swapDictionary = {
 	"%%WEATHER_TOMORROW%%": weatherTomorrow
 	}
 
-#print(swapDictionary)
-
+'''GET PV MODULE POWER PRODUCTION HISTORY'''
 #retrieve past 2 calendar days work of PV power data
 PVpower = json.loads(getRequest(getServer + "/api/v1/chargecontroller.php?value=PV-power-L&duration=2"))
 
@@ -90,7 +83,6 @@ for h in range(24):
 	avgPVPower.append(sum(collectVals)/len(collectVals))	
 
 #scale the average power data to get a percentage
-
 #the default module size is 50 watts. if the server has a different sized module it will be scaled appropriately
 moduleSize = 50 * float(getRequest(getServer + "/api/v1/chargecontroller.php?systemInfo=wattage-scaler"))
 
