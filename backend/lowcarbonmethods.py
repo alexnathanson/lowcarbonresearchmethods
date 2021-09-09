@@ -10,8 +10,8 @@ dst = "/home/pi/local/www/lowcarbonresearchmethods/output"
 
 # CC = ChargeControllerData("/home/pi/solar-protocol/charge-controller/data/tracerData"+ str(datetime.date.today()) +".csv")
 
-#getServer = "http://localhost"
-getServer = "http://www.solarprotocol.net"
+getServer = "http://localhost"
+#getServer = "http://www.solarprotocol.net"
 
 def getRequest(url):
 	try:			
