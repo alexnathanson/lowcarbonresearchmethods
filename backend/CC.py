@@ -1,4 +1,3 @@
-import requests
 
 class ChargeControllerData:
 	def __init__(self, fP):
@@ -23,14 +22,3 @@ class ChargeControllerData:
 				if csvArray[0][v] == chosenDataValue:
 					return csvArray[-1][v]
 
-
-	def getRequest(self, url):
-		try:			
-			response = requests.get(url, timeout = 5)
-			print(response.text)		
-		except requests.exceptions.HTTPError as err:
-			print(err)
-		except requests.exceptions.Timeout as err:
-			print(err)
-		except:
-			print(err)

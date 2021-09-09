@@ -120,7 +120,7 @@ body{
 }
 
 #batBar{
-	width: %%BATTERY%%; 
+	width: %%BATTERY_BAR%%; 
 	float: left;
 	opacity: 50%;
 	height: 100%;
