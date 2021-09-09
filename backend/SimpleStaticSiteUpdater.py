@@ -50,7 +50,7 @@ class StaticSiteUpdater:
 	#writes the file to the specified destination
 	def saveFile(self, fileContents, srcFileName):
 		# swap out the src file path for the dst file path
-		dstFileName = self.dstDirectory + "/" + srcFileName.replace(self.srcDirectory, self.dstDirectory)
+		dstFileName = srcFileName.replace(self.srcDirectory, self.dstDirectory)
 		print(dstFileName)
 		try:
 			with open(dstFileName, "w") as f:
