@@ -25,7 +25,7 @@ localTime = datetime.datetime.today().strftime("%I:%M %p")
 swapDictionary = { 
 	"%%TIME%%": localTime,
 	#"%%BATTERY%%": CC.localData("battery percentage"),
-	"%%BATTERY%%": CC.getRequest("http://localhost/api/v1/?value=battery-percentage"),
+	"%%BATTERY%%": CC.getRequest("http://localhost/api/v1/chargecontroller.php?value=battery-percentage"),
 	"%%WEATHER_TODAY%%": weatherToday,
 	"%%WEATHER_TOMORROW%%": weatherTomorrow
 	}
@@ -37,7 +37,7 @@ for h in range(24):
 print(PVtime)
 
 
-print(CC.getRequest("http://localhost/api/v1/?value=PV-power-L&duration=2"))
+print(CC.getRequest("http://localhost/api/v1/chargecontroller.php?value=PV-power-L&duration=2"))
 
 # PVhist = zip(PVtime,)
 
