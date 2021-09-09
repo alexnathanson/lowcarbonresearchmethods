@@ -24,7 +24,7 @@ def getRequest(url):
 	except:
 		print(err)
 
-battPercentage = getRequest(getServer + "/api/v1/chargecontroller.php?value=battery-percentage")
+battPercentage = 100 * float(getRequest(getServer + "/api/v1/chargecontroller.php?value=battery-percentage"))
 
 if battPercentage != 'None':
 	battPercentage = str(battPercentage) + "%"
