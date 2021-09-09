@@ -40,15 +40,17 @@ class StaticSiteUpdater:
 	#replaces strings from swapList dictionary and sends the output to saveFile()
 	#swapList is a dictionary
 	#key and value can be individual strings or can I pass in a dict?
-	def findReplace(self,inputString, swapList, fileName):
+	def findReplace(self,inputString, swapList, srcFileName):
 		for placeholder, replacement in self.swapDict:
 			inputString.replace(placeholder,replacement)
-		self.saveFile(inputString, fileName )
+		self.saveFile(inputString, srcFileName)
 
 
 	#writes the file to the specified destination
-	def saveFile(self, fileContents, dstFileName):
-		#save this file!
+	def saveFile(self, fileContents, srcFileName):
+		# swap out the src file path for the dst file path
+		dsdtFileName = self.dstDirectory + "/" + srcFileName.replace(self.srcDirectory, self.dstDirectory)
+		print(dstFileName)
 		try:
 			with open(dstFileName, "w") as f:
 				f.write(fileContents)
