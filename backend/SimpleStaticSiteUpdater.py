@@ -1,5 +1,5 @@
 import os
-
+import errno
 
 class StaticSiteUpdater:
 	def __init__(self, aSrcDirectory, aDstDirectory, swapDict):
@@ -52,6 +52,15 @@ class StaticSiteUpdater:
 		# swap out the src file path for the dst file path
 		dstFileName = srcFileName.replace(self.srcDirectory, self.dstDirectory)
 		print(dstFileName)
+
+		#make new directory if needed
+		if not os.path.exists(os.path.dirname(dstFileName)):
+		    try:
+		        os.makedirs(os.path.dirname(dstFileName))
+		    except OSError as exc: # Guard against race condition
+		        if exc.errno != errno.EEXIST:
+		            raise
+
 		try:
 			with open(dstFileName, "w") as f:
 				f.write(fileContents)
