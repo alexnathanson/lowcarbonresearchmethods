@@ -21,19 +21,26 @@ class StaticSiteUpdater:
 		print('loading file ' + aFile)
 		#load file
 		try:
-			with open(aFile, r) as f:
+			with open(aFile) as f:
 				fileContents = f.read()
-				findReplace(fileContents, self.swapDict, aFile)
+				#findReplace(fileContents, self.swapDict, aFile)
 				f.close()
 				
 		except:
 			print('Error reading file ' + aFile)
 
 	def saveFile(self, fileContents, dstFileName):
-
+		#save this file!
+		print(dstFileName)
 
 	#recursively gets all files from dirctory including subdirectory
 	def findReplaceEntireDirectory(self, aDirectory):
 		for (root, dirs, file) in os.walk(aDirectory):
+			# print(root)
+			# print(dirs)
+			# print(file)
 		    for f in file:
-		        readFile(f)
+			    #print(root + "/" + f)
+			    fullPath = root + "/" + f
+			    fullPath = fullPath.replace("\\","/")
+			    self.readFile(fullPath)

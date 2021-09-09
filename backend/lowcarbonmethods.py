@@ -1,6 +1,7 @@
 from SimpleStaticSiteUpdater import StaticSiteUpdater
 
-src = "/home/pi/local/www/templates"
+#src = "/home/pi/local/www/templates"
+src = "D:/LowCarbonMethods/templates"
 dst = "home/pi/local/www"
 
 battPercentage = 0
