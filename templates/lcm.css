@@ -115,7 +115,7 @@ body{
 
 #batPercent {
 	position: absolute;
-	left: min(%%BATTERY%%,calc(100vw - 23em));
+	left: min(%%BATTERY%%,calc(100vw - 30em));
 	bottom: 5%;
 }
 
