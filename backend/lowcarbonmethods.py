@@ -25,7 +25,7 @@ localTime = datetime.datetime.today().strftime("%I:%M %p")
 swapDictionary = { 
 	"%%TIME%%": localTime,
 	#"%%BATTERY%%": CC.localData("battery percentage"),
-	"%%BATTERY%%": CC.getRequest("http://localhost/api/v1/?value=battery-percentage")
+	"%%BATTERY%%": CC.getRequest("http://localhost/api/v1/?value=battery-percentage"),
 	"%%WEATHER_TODAY%%": weatherToday,
 	"%%WEATHER_TOMORROW%%": weatherTomorrow
 	}
