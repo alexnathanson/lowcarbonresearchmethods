@@ -4,7 +4,7 @@ src = "/home/pi/local/www/lowcarbonresearchmethods/templates"
 #src = "D:/LowCarbonMethods/templates"
 dst = "/home/pi/local/www/lowcarbonresearchmethods/output"
 
-battPercentage = "0%"
+battPercentage = "50%"
 weatherToday = "sunny"
 weatherTomorrow = "cloudy"
 localTime = "3pm"
