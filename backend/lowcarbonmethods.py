@@ -2,6 +2,7 @@ import datetime
 from SimpleStaticSiteUpdater import StaticSiteUpdater
 import requests
 import json
+from keys import *
 
 src = "/home/pi/local/www/lowcarbonresearchmethods/templates"
 dst = "/home/pi/local/www/lowcarbonresearchmethods"
@@ -30,8 +31,18 @@ except:
 
 localTime = datetime.datetime.today().strftime("%I:%M %p")
 
-weatherToday = "unknown"
-weatherTomorrow = "unknown"
+
+# weatherToday = json.loads(getRequest("http://api.openweathermap.org/data/2.5/weather?q=Toronto&appid="+ openweatherapi))
+# print(weatherToday['weather'][0]['description'])
+
+# weatherTomorrow = json.loads(getRequest("http://api.openweathermap.org/data/2.5/forecast/daily?q=Toronto&appid="+ openweatherapi))
+# print(weatherTomorrow)
+
+TrenteLat = "44.35949686052928"
+TrenteLong = "-78.28909175456307"
+weather = json.loads(getRequest("https://api.openweathermap.org/data/2.5/onecall?lat=" + TrenteLat +"&lon=" + TrenteLong + "&exclude=minutely,hourly,alerts&appid=" + openweatherapi))
+weatherToday = weather['current']['weather'][0]['description']
+weatherTomorrow = weather['daily'][0]['weather'][0]['description']
 
 # nightTheme = {
 	
