@@ -87,6 +87,8 @@ for h in range(24):
 #the default module size is 50 watts. if the server has a different sized module it will be scaled appropriately
 moduleSize = 50 * float(getRequest(getServer + "/api/v1/chargecontroller.php?systemInfo=wattage-scaler"))
 
+# NOTE: in the future the background graph could be mapped so whatever the range of numbers is is visually larger on the page
+
 powerPercentage = [str(100.0 * (p / moduleSize)) + "%" for p in avgPVPower]
 
 #add these average power stats to the dictionary
