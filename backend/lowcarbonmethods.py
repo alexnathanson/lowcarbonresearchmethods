@@ -68,7 +68,7 @@ dayTheme = {
 	"%%bat-bar%%": "black",
 	"%%content-bg%%": "#D3E8E8",
 	"%%data-bg%%" : "grey",
-	"%%header-bg%%" : "black",
+	"%%header-bg%%" : "#FBE289",
 	"%%logo-src%%" : "assets/logo_white_on_clear.png"
 }
 

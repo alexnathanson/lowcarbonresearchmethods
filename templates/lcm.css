@@ -537,7 +537,7 @@ body{
 		height: calc(100vw * .28);
 		z-index: 1;
 	    border-radius: 50%;
-	    background-color: var(--local-background)/*darkorange*/;
+	    background-color: var(--logo-background)/*darkorange*/;
 	}
 
 	#logoContainer img{
@@ -548,8 +548,6 @@ body{
 		z-index: 1;
 		width: 60%;
 	}
-	/*end circle version of logo code*/
-
 
 	#header-background {
 		display: none;
