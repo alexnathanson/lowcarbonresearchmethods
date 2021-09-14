@@ -1,5 +1,5 @@
 import datetime
-from SimpleStaticSiteUpdater import StaticSiteUpdater
+from SimpleStaticSiteGenerator import StaticSiteGenerator
 import requests
 import json
 from keys import *
@@ -42,6 +42,8 @@ TrenteLat = "44.35949686052928"
 TrenteLong = "-78.28909175456307"
 weather = json.loads(getRequest("https://api.openweathermap.org/data/2.5/onecall?lat=" + TrenteLat +"&lon=" + TrenteLong + "&exclude=minutely,hourly,alerts&appid=" + openweatherapi))
 weatherToday = weather['current']['weather'][0]['description']
+
+#CONFIRM THAT POSITION 0 IS TOMORROW!!!
 weatherTomorrow = weather['daily'][0]['weather'][0]['description']
 
 # nightTheme = {
@@ -108,7 +110,7 @@ for p in range(len(powerPercentage)):
 
 print(swapDictionary)
 
-SS = StaticSiteUpdater(src, dst, swapDictionary)
+SS = StaticSiteGenerator(src, dst, swapDictionary)
 
 SS.findReplaceEntireDirectory(SS.srcDirectory)
 

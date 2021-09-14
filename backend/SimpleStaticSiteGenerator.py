@@ -1,7 +1,7 @@
 import os
 import errno
 
-class StaticSiteUpdater:
+class StaticSiteGenerator:
 	def __init__(self, aSrcDirectory, aDstDirectory, swapDict):
 		self.srcDirectory = aSrcDirectory
 		self.dstDirectory = aDstDirectory
@@ -21,6 +21,12 @@ class StaticSiteUpdater:
 			    fullPath = root + "/" + f
 			    fullPath = fullPath.replace("\\","/")
 			    self.readFile(fullPath)
+
+	# this has not been tested - single files
+	#passes files to readFile()
+	def findReplaceSingleFile(self, aFile, aDictionary):
+		self.swapDict = aDictionary
+		self.readFile(aFile)
 
 
 	#reads in text from files

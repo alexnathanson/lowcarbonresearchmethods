@@ -11,11 +11,23 @@ lightgray:  bat back bar
 graph:  grey (low opacityt);
 */
 
+:root{
+	--logo-background: black;
+	--body-background: #D6D6D6;
+	--local-background:  #82E6E8;
+	--nav-background: #516666;
+	--bat-background: lightgray;
+	--bat-bar: #04BCBF;
+	--content-background: #D3E8E8;
+	--data-background: grey;
+	--time-background: #82E6E8;
+	--header-background: black; /*only used in small version*/
+}
+
 body{
-	background-color: #D6D6D6;
+	background-color: var(--body-background);
 	margin: 0;
 	font-family: Helvetica, sans-serif;
-
 }
 
 #headerContainer{
@@ -46,7 +58,7 @@ body{
 	height: calc(100vw * .14);
 	z-index: 1;
     border-radius: 50%;
-    background-color: black;
+    background-color: var(--logo-background);
 }
 
 #logoContainer img{
@@ -68,7 +80,7 @@ body{
 	left: 15%;
 	top: 10px;
 	width: 85%;
-	background-color: #82E6E8;
+	background-color: var(--local-background);
 	display: flex;
 	align-items: center;
   	justify-content: space-evenly;
@@ -76,7 +88,7 @@ body{
 
 #header-background {
 	position: absolute;
-	background-color: #D6D6D6; /*make same as body*/
+	background-color: var(--body-background); /*make same as body*/
 	/*the height of this should be the same as header-local + 22px*/
 	height: calc((100vw * .030) + 22px);
 	top: 0px;
@@ -87,7 +99,7 @@ body{
 	position: absolute;
 	border-style: solid;
 	border-width: 1px;
-	background: #516666;
+	background: var(--nav-background);
 	height: calc(100vw * .04);
 	top:  calc(100vw * .035);
 	/*left: calc(100vw * .09);*/ /*this is for square version*/
@@ -103,7 +115,7 @@ body{
 	position: absolute;
 	border-style: solid;
 	border-width: 1px;
-	background-color: lightgray;
+	background-color: var(--bat-background);
 	height: calc(100vw * .027);
 	padding: 5px;
 	width: 86%;
@@ -115,7 +127,7 @@ body{
 
 #batPercent {
 	position: absolute;
-	left: min(%%BATTERY%%,calc(100vw - 30em));
+	left: min(%%BATTERY%%,calc(100vw - 28em));
 	bottom: 5%;
 }
 
@@ -124,7 +136,7 @@ body{
 	float: left;
 	opacity: 50%;
 	height: 100%;
-	background-color: #04BCBF;
+	background-color: var(--bat-bar);
 }
 
 /*.statName{
@@ -168,7 +180,7 @@ body{
 	padding-bottom: 20px;
 	bottom: 0;
 	width: 100%;
-	background-color: black;
+	background-color: var(--logo-background);
 	color:  white;
 	display: flex;
 	flex-direction: column;
@@ -217,7 +229,7 @@ body{
 	width: 25%;
 	margin: 1%;
 	padding: 5px;
-	background-color: #D3E8E8;
+	background-color: var(--content-background);
 	border-style: solid;
 	border-width: 1px;
 }
@@ -241,7 +253,7 @@ body{
 	margin-bottom: 50px;
 	padding: 10px;
 	width: 75%;	
-	background-color: #D3E8E8;
+	background-color: var(--content-background);;
 }
 
 .event h2 {
@@ -264,7 +276,7 @@ body{
 	margin-bottom: 50px;
 	padding: 10px;
 	width: 75%;	
-	background-color: #D3E8E8;
+	background-color: var(--content-background);
 }
 
 .contentItem h2 {
@@ -300,10 +312,8 @@ body{
 	width: 100%;
 	bottom: 0;
 	display: flex;
-		flex-direction: column;
-
-/*	background-color: purple;
-*/}
+	flex-direction: column;
+}
 
 /*container for entire bar graph*/
 #historyBar {
@@ -326,7 +336,7 @@ body{
 .hbar{
 	width: 100%;
 	opacity: 30%;
-	background: grey;
+	background: var(--data-background);
 	bottom: 0;
 	position: absolute;
 	border-top: 1px solid;
@@ -439,7 +449,7 @@ body{
 	padding-bottom: 2px;
 	padding-left: 10px;
 	padding-right: 10px;
-	background-color: #82E6E8;
+	background-color: var(--time-background);
 }
 
 #twentyfour{
@@ -531,7 +541,7 @@ body{
 		height: calc(100vw * .28);
 		z-index: 1;
 	    border-radius: 50%;
-	    background-color: darkorange;
+	    background-color: var(--local-background)/*darkorange*/;
 	}
 
 	#logoContainer img{
@@ -570,7 +580,7 @@ body{
 		top:  calc(100vw * .025);
 		left: 17%;
 		width: calc(80% - 4em);
-		background-color: black;
+		background-color: transparent;
 		color: white;
 		display: flex;
 		flex-direction: column;
@@ -586,7 +596,6 @@ body{
 		border-width: 1px;
 		border-color: white;
 		padding: 1px;
-		background-color: black;
 		color: white;
 		display: block;
 	}
@@ -632,7 +641,7 @@ body{
 		width: 90%;
 		margin: 1%;
 		padding: 5px;
-		background-color: #D3E8E8;
+		background-color: var(--content-background);
 		border-style: solid;
 		border-width: 1px;
 	}
@@ -643,6 +652,6 @@ body{
 		margin-bottom: 50px;
 		padding: 10px;
 		width: 90%;	
-		background-color: #D3E8E8;
+		background-color: var(--content-background);
 	}
 }

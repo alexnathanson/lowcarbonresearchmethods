@@ -10,9 +10,16 @@ Light cyan: D3E8E8; content
 lightgray:  bat back bar
 graph:  grey (low opacityt);
 */
+:root{
+	--logo-background: black;
+	--body-background: #D6D6D6;
+
+	--day-logo-background: green;
+	--day-background: blue;
+}
 
 body{
-	background-color: #D6D6D6;
+	background-color: var(--day-background);
 	margin: 0;
 	font-family: Helvetica, sans-serif;
 
@@ -570,7 +577,7 @@ body{
 		top:  calc(100vw * .025);
 		left: 17%;
 		width: calc(80% - 4em);
-		background-color: black;
+		background-color: transparent;
 		color: white;
 		display: flex;
 		flex-direction: column;
@@ -586,8 +593,8 @@ body{
 		border-width: 1px;
 		border-color: white;
 		padding: 1px;
-		background-color: black;
-		color: white;
+/*		background-color: black;
+*/		color: white;
 		display: block;
 	}
 

@@ -1,0 +1,24 @@
+/*
+location - the part of the page to insert the content
+title - The title for the section (optional)
+title style - 
+content - the text
+image - image src
+id
+class
+*/
+
+****
+location: content
+title: About
+title style: h2
+content:
+****
+
+****
+location: content
+title: About the web design
+title style: h3
+content:
+image: 
+****
