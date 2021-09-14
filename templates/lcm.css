@@ -60,19 +60,6 @@ body{
 	z-index: 1;
 }
 
-/*the square version of the logo - comment out for circle version*/
-/*#headerContainer img{
-	position: relative;
-	top:  0;
-	height: auto;
-	left: 0;
-	z-index: 1;
-	background-color: black;
-	width: 10%;
-}
-*/
-
-/* circle version of logo - comment out for square version*/
 #logoContainer{
 	position: relative;
 	top:  calc(100vw * -.04);/*version I sent Anne was 5% and 15% */
@@ -92,7 +79,6 @@ body{
 	z-index: 1;
 	width: 60%;
 }
-/*end circle version of logo code*/
 
 #header-local {
 	position: absolute;
@@ -203,7 +189,7 @@ body{
 	padding-bottom: 20px;
 	bottom: 0;
 	width: 100%;
-	background-color: var(--nav-background);
+	background-color: var(--content-background);
 	color:  white;
 	display: flex;
 	flex-direction: column;
