@@ -60,9 +60,9 @@ nightTheme = {
 
 dayTheme = {
 	"%%logo-bg%%" : "black" ,
-	"%%body-bg%%" : "#99BEC7",
+	"%%body-bg%%" : "#B0E7FC",
 	"%%local-bg%%": "#E3FC80",
-	"%%nav-bg%%" : "#9DB04F",
+	"%%nav-bg%%" : "#71861D",
 	"%%bat-bg%%" : "#D3E87D", #should I set opacity low?
 	"%%bat-bar%%": "#B8CC66",
 	"%%content-bg%%": "#D3E8E8",
