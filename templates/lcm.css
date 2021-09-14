@@ -45,6 +45,7 @@ graph:  grey (low opacityt);
 	--content-background: %%content-bg%%;
 	--data-background: %%data-bg%%;
 	--header-background: %%header-bg%%;
+	--local-text: %%local-text%%;
 }
 
 body{
@@ -190,7 +191,7 @@ body{
 	bottom: 0;
 	width: 100%;
 	background-color: var(--logo-background);
-	color:  white;
+	color:  val(--local-text);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -200,7 +201,7 @@ body{
 
 #footer a {
 /*	text-decoration: none;
-*/	color: white;
+*/	color: val(--local-text);
 }
 
 #footer-nav {
@@ -575,7 +576,7 @@ body{
 		left: 17%;
 		width: calc(80% - 4em);
 		background-color: transparent;
-		color: white;
+		color: val(--local-text);
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
@@ -590,13 +591,13 @@ body{
 		border-width: 1px;
 		border-color: white;
 		padding: 1px;
-		color: white;
+		color: val(--local-text);
 		display: block;
 	}
 
 	#menu a {
 		text-decoration: none;
-		color: white;
+		color: val(--local-text);
 	}
 
 	#footer {
