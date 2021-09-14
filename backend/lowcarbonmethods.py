@@ -62,7 +62,7 @@ dayTheme = {
 	"%%logo-bg%%" : "black" ,
 	"%%body-bg%%" : "#D8F3FD",
 	"%%local-bg%%": "#FBE289",
-	"%%nav-bg%%" : "#A07918",
+	"%%nav-bg%%" : "#6E6235",
 	"%%bat-bg%%" : "#EBCC5C",
 	"%%bat-bar%%": "#F0C97F",
 	"%%content-bg%%": "#D3E8E8",
