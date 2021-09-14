@@ -20,7 +20,6 @@ graph:  grey (low opacityt);
 	--bat-bar: #04BCBF;
 	--content-background: #D3E8E8;
 	--data-background: grey;
-	--time-background: #82E6E8;
 	--header-background: black; /*only used in small version*/
 }
 
@@ -449,7 +448,7 @@ body{
 	padding-bottom: 2px;
 	padding-left: 10px;
 	padding-right: 10px;
-	background-color: var(--time-background);
+	background-color: var(--local-background);
 }
 
 #twentyfour{
@@ -484,7 +483,7 @@ body{
 		left: 12%;
 		top: 9px;
 		width: 88%;
-		background-color: #82E6E8;
+		background-color: var(--local-background);
 		display: flex;
 		align-items: center;
 	  	justify-content: space-evenly;
@@ -510,29 +509,16 @@ body{
 
 @media (max-width: 1000px) {
 	body{
-		background-color: purple;
+		background-color: var(--body-background);
 	}
 
 	#headerContainer{
-		background-color: black;
+		background-color: var(--header-background);
 		height: calc(100vw * .235);
 		padding-top: 0px;
 		padding-bottom: 0px;
 	}
 
-/*	#headerContainer img{
-		position: absolute;
-		top:  0;
-		left: 0;
-		z-index: 1;
-		background-color: black;
-		height: auto;
-		width: 20%;
-		height: calc(100vw * .2);
-	}*/
-
-
-	/* circle version of logo - comment out for square version*/
 	#logoContainer{
 		position: relative;
 		top:  calc(100vw * -.09);/*version I sent Anne was 5% and 15% */
@@ -605,6 +591,10 @@ body{
 		color: white;
 	}
 
+	#footer {
+		background-color: var(--header-background);
+	}
+
 	#footer-nav {
 		position: relative;
 		padding: 5px;
@@ -614,8 +604,8 @@ body{
 		align-content: center;
 	  	justify-content: space-evenly;
 		flex-direction: column;
-		background-color: black;
-	}
+/*		background-color: black;
+*/	}
 
 	.rRow{
 		display: flex;
