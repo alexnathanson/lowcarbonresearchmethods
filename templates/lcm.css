@@ -11,7 +11,7 @@ lightgray:  bat back bar
 graph:  grey (low opacityt);
 */
 
-:root{
+/*:root{
 	--logo-background: black;
 	--body-background: #D6D6D6;
 	--local-background:  #82E6E8;
@@ -20,7 +20,19 @@ graph:  grey (low opacityt);
 	--bat-bar: #04BCBF;
 	--content-background: #D3E8E8;
 	--data-background: grey;
-	--header-background: black; /*only used in small version*/
+	--header-background: black;
+}*/
+
+:root{
+	--logo-background: %%logo-bg%%;
+	--body-background: %%body-bg%%;
+	--local-background: %%local-bg%%;
+	--nav-background: %%nav-bg%%;
+	--bat-background: %%bat-bg%%;
+	--bat-bar: %%bat-bar%%;
+	--content-background: %%content-bg%%;
+	--data-background: %%data-bg%%;
+	--header-background: %%header-bg%%; /*only used in small version*/
 }
 
 body{

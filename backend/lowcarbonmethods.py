@@ -46,13 +46,29 @@ weatherToday = weather['current']['weather'][0]['description']
 #CONFIRM THAT POSITION 0 IS TOMORROW!!!
 weatherTomorrow = weather['daily'][0]['weather'][0]['description']
 
-# nightTheme = {
-	
-# }
+nightTheme = {
+	"%%logo-bg%%" : "black" ,
+	"%%body-bg%%" : "#D6D6D6",
+	"%%local-bg%%": "#82E6E8",
+	"%%nav-bg%%" : "#516666"
+	"%%bat-bg%%" : "lightgray",
+	"%%bat-bar%%": "#04BCBF",
+	"%%content-bg%%": "#D3E8E8",
+	"%%data-bg%%" : "grey",
+	"%%header-bg%%" : "black"
+}
 
-# dayTheme = {
-	
-# }
+dayTheme = {
+	"%%logo-bg%%" : "green" ,
+	"%%body-bg%%" : "#D6D6D6",
+	"%%local-bg%%": "yellow",
+	"%%nav-bg%%" : "#516666"
+	"%%bat-bg%%" : "lightgray",
+	"%%bat-bar%%": "#04BCBF",
+	"%%content-bg%%": "#D3E8E8",
+	"%%data-bg%%" : "grey",
+	"%%header-bg%%" : "black"
+}
 
 swapDictionary = { 
 	"%%TIME%%": localTime,
@@ -107,6 +123,11 @@ powerPercentage = [str(100.0 * (p / moduleSize)) + "%" for p in avgPVPower]
 #add these average power stats to the dictionary
 for p in range(len(powerPercentage)):
 	swapDictionary['%%'+ str(24 - (p + 1)) + 'H%%'] = powerPercentage[p]
+
+if 	float(getRequest(getServer + "/api/v1/chargecontroller.php?value=PV-power-L")) > 0.0 :
+	swapDictionary.update(nightTheme)
+else:
+	swapDictionary.update(dayTheme)
 
 print(swapDictionary)
 
