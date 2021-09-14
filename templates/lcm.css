@@ -602,6 +602,7 @@ body{
 
 	#footer {
 		background-color: var(--header-background);
+		color: val(--local-text);
 	}
 
 	#footer-nav {
@@ -613,7 +614,6 @@ body{
 		align-content: center;
 	  	justify-content: space-evenly;
 		flex-direction: column;
-		color: val(--local-text);
 	}
 
 	.rRow{
