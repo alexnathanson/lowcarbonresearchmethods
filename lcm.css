@@ -10,19 +10,47 @@ Light cyan: D3E8E8; content
 lightgray:  bat back bar
 graph:  grey (low opacityt);
 */
-:root{
+
+/*:root{
 	--logo-background: black;
 	--body-background: #D6D6D6;
+	--local-background:  #82E6E8;
+	--nav-background: #516666;
+	--bat-background: lightgray;
+	--bat-bar: #04BCBF;
+	--content-background: #D3E8E8;
+	--data-background: grey;
+	--header-background: black;
+}*/
 
-	--day-logo-background: green;
-	--day-background: blue;
+:root{
+	--logo-background: black;
+	--body-background: #99BEC7;
+	--local-background:  #E3FC80;
+	--nav-background: #524C59;
+	--bat-background: lightgray;
+	--bat-bar: #04BCBF;
+	--content-background: #D3E8E8;
+	--data-background: grey;
+	--header-background: black;
 }
 
+/*:root{
+	--logo-background: %%logo-bg%%;
+	--body-background: %%body-bg%%;
+	--local-background: %%local-bg%%;
+	--nav-background: %%nav-bg%%;
+	--bat-background: %%bat-bg%%;
+	--bat-bar: %%bat-bar%%;
+	--content-background: %%content-bg%%;
+	--data-background: %%data-bg%%;
+	--header-background: %%header-bg%%;
+}*/
+
 body{
-	background-color: var(--day-background);
+	background-color: var(--body-background);
 	margin: 0;
 	font-family: Helvetica, sans-serif;
-
 }
 
 #headerContainer{
@@ -53,7 +81,7 @@ body{
 	height: calc(100vw * .14);
 	z-index: 1;
     border-radius: 50%;
-    background-color: black;
+    background-color: var(--logo-background);
 }
 
 #logoContainer img{
@@ -75,7 +103,7 @@ body{
 	left: 15%;
 	top: 10px;
 	width: 85%;
-	background-color: #82E6E8;
+	background-color: var(--local-background);
 	display: flex;
 	align-items: center;
   	justify-content: space-evenly;
@@ -83,7 +111,7 @@ body{
 
 #header-background {
 	position: absolute;
-	background-color: #D6D6D6; /*make same as body*/
+	background-color: var(--body-background); /*make same as body*/
 	/*the height of this should be the same as header-local + 22px*/
 	height: calc((100vw * .030) + 22px);
 	top: 0px;
@@ -94,7 +122,7 @@ body{
 	position: absolute;
 	border-style: solid;
 	border-width: 1px;
-	background: #516666;
+	background: var(--nav-background);
 	height: calc(100vw * .04);
 	top:  calc(100vw * .035);
 	/*left: calc(100vw * .09);*/ /*this is for square version*/
@@ -110,7 +138,7 @@ body{
 	position: absolute;
 	border-style: solid;
 	border-width: 1px;
-	background-color: lightgray;
+	background-color: var(--bat-background);
 	height: calc(100vw * .027);
 	padding: 5px;
 	width: 86%;
@@ -122,16 +150,16 @@ body{
 
 #batPercent {
 	position: absolute;
-	left: 20%/*max(calc(20% - 3em),19em)*/;
+	left: min(%%BATTERY%%,calc(100vw - 28em));
 	bottom: 5%;
 }
 
 #batBar{
-	width: 20%;
+	width: %%BATTERY_BAR%%; 
 	float: left;
 	opacity: 50%;
 	height: 100%;
-	background-color: #04BCBF;
+	background-color: var(--bat-bar);
 }
 
 /*.statName{
@@ -175,7 +203,7 @@ body{
 	padding-bottom: 20px;
 	bottom: 0;
 	width: 100%;
-	background-color: black;
+	background-color: var(--nav-background);
 	color:  white;
 	display: flex;
 	flex-direction: column;
@@ -224,7 +252,7 @@ body{
 	width: 25%;
 	margin: 1%;
 	padding: 5px;
-	background-color: #D3E8E8;
+	background-color: var(--content-background);
 	border-style: solid;
 	border-width: 1px;
 }
@@ -248,7 +276,7 @@ body{
 	margin-bottom: 50px;
 	padding: 10px;
 	width: 75%;	
-	background-color: #D3E8E8;
+	background-color: var(--content-background);;
 }
 
 .event h2 {
@@ -271,7 +299,7 @@ body{
 	margin-bottom: 50px;
 	padding: 10px;
 	width: 75%;	
-	background-color: #D3E8E8;
+	background-color: var(--content-background);
 }
 
 .contentItem h2 {
@@ -307,10 +335,8 @@ body{
 	width: 100%;
 	bottom: 0;
 	display: flex;
-		flex-direction: column;
-
-/*	background-color: purple;
-*/}
+	flex-direction: column;
+}
 
 /*container for entire bar graph*/
 #historyBar {
@@ -333,7 +359,7 @@ body{
 .hbar{
 	width: 100%;
 	opacity: 30%;
-	background: grey;
+	background: var(--data-background);
 	bottom: 0;
 	position: absolute;
 	border-top: 1px solid;
@@ -446,7 +472,7 @@ body{
 	padding-bottom: 2px;
 	padding-left: 10px;
 	padding-right: 10px;
-	background-color: #82E6E8;
+	background-color: var(--local-background);
 }
 
 #twentyfour{
@@ -481,7 +507,7 @@ body{
 		left: 12%;
 		top: 9px;
 		width: 88%;
-		background-color: #82E6E8;
+		background-color: var(--local-background);
 		display: flex;
 		align-items: center;
 	  	justify-content: space-evenly;
@@ -507,29 +533,16 @@ body{
 
 @media (max-width: 1000px) {
 	body{
-		background-color: purple;
+		background-color: var(--body-background);
 	}
 
 	#headerContainer{
-		background-color: black;
+		background-color: var(--header-background);
 		height: calc(100vw * .235);
 		padding-top: 0px;
 		padding-bottom: 0px;
 	}
 
-/*	#headerContainer img{
-		position: absolute;
-		top:  0;
-		left: 0;
-		z-index: 1;
-		background-color: black;
-		height: auto;
-		width: 20%;
-		height: calc(100vw * .2);
-	}*/
-
-
-	/* circle version of logo - comment out for square version*/
 	#logoContainer{
 		position: relative;
 		top:  calc(100vw * -.09);/*version I sent Anne was 5% and 15% */
@@ -538,7 +551,7 @@ body{
 		height: calc(100vw * .28);
 		z-index: 1;
 	    border-radius: 50%;
-	    background-color: darkorange;
+	    background-color: var(--local-background)/*darkorange*/;
 	}
 
 	#logoContainer img{
@@ -593,14 +606,17 @@ body{
 		border-width: 1px;
 		border-color: white;
 		padding: 1px;
-/*		background-color: black;
-*/		color: white;
+		color: white;
 		display: block;
 	}
 
 	#menu a {
 		text-decoration: none;
 		color: white;
+	}
+
+	#footer {
+		background-color: var(--header-background);
 	}
 
 	#footer-nav {
@@ -612,8 +628,8 @@ body{
 		align-content: center;
 	  	justify-content: space-evenly;
 		flex-direction: column;
-		background-color: black;
-	}
+/*		background-color: black;
+*/	}
 
 	.rRow{
 		display: flex;
@@ -639,7 +655,7 @@ body{
 		width: 90%;
 		margin: 1%;
 		padding: 5px;
-		background-color: #D3E8E8;
+		background-color: var(--content-background);
 		border-style: solid;
 		border-width: 1px;
 	}
@@ -650,6 +666,6 @@ body{
 		margin-bottom: 50px;
 		padding: 10px;
 		width: 90%;	
-		background-color: #D3E8E8;
+		background-color: var(--content-background);
 	}
 }

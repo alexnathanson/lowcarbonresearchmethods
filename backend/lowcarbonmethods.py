@@ -59,12 +59,12 @@ nightTheme = {
 }
 
 dayTheme = {
-	"%%logo-bg%%" : "green" ,
-	"%%body-bg%%" : "#D6D6D6",
-	"%%local-bg%%": "yellow",
-	"%%nav-bg%%" : "#516666",
-	"%%bat-bg%%" : "lightgray",
-	"%%bat-bar%%": "#04BCBF",
+	"%%logo-bg%%" : "black" ,
+	"%%body-bg%%" : "#99BEC7",
+	"%%local-bg%%": "#E3FC80",
+	"%%nav-bg%%" : "#524C59",
+	"%%bat-bg%%" : "lightgray", #should I set opacity low?
+	"%%bat-bar%%": "#E3FC80",
 	"%%content-bg%%": "#D3E8E8",
 	"%%data-bg%%" : "grey",
 	"%%header-bg%%" : "black"

@@ -23,6 +23,18 @@ graph:  grey (low opacityt);
 	--header-background: black;
 }*/
 
+/*:root{
+	--logo-background: black;
+	--body-background: #99BEC7;
+	--local-background:  #E3FC80;
+	--nav-background: #524C59;
+	--bat-background: lightgray;
+	--bat-bar: #04BCBF;
+	--content-background: #D3E8E8;
+	--data-background: grey;
+	--header-background: black;
+}*/
+
 :root{
 	--logo-background: %%logo-bg%%;
 	--body-background: %%body-bg%%;
@@ -32,7 +44,7 @@ graph:  grey (low opacityt);
 	--bat-bar: %%bat-bar%%;
 	--content-background: %%content-bg%%;
 	--data-background: %%data-bg%%;
-	--header-background: %%header-bg%%; /*only used in small version*/
+	--header-background: %%header-bg%%;
 }
 
 body{
@@ -191,7 +203,7 @@ body{
 	padding-bottom: 20px;
 	bottom: 0;
 	width: 100%;
-	background-color: var(--logo-background);
+	background-color: var(--nav-background);
 	color:  white;
 	display: flex;
 	flex-direction: column;
