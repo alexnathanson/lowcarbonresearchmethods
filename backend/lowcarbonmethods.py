@@ -126,7 +126,7 @@ powerPercentage = [str(100.0 * (p / moduleSize)) + "%" for p in avgPVPower]
 for p in range(len(powerPercentage)):
 	swapDictionary['%%'+ str(24 - (p + 1)) + 'H%%'] = powerPercentage[p]
 
-if 	float(getRequest(getServer + "/api/v1/chargecontroller.php?value=PV-power-L")) <= 0.0 :
+if 	float(getRequest(getServer + "/api/v1/chargecontroller.php?value=PV-power-L")) > 0.0 :
 	swapDictionary.update(nightTheme)
 else:
 	swapDictionary.update(dayTheme)
