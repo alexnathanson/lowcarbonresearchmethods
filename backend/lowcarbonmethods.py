@@ -62,9 +62,9 @@ dayTheme = {
 	"%%logo-bg%%" : "black" ,
 	"%%body-bg%%" : "#99BEC7",
 	"%%local-bg%%": "#E3FC80",
-	"%%nav-bg%%" : "#524C59",
-	"%%bat-bg%%" : "lightgray", #should I set opacity low?
-	"%%bat-bar%%": "#E3FC80",
+	"%%nav-bg%%" : "#9DB04F",
+	"%%bat-bg%%" : "#D3E87D", #should I set opacity low?
+	"%%bat-bar%%": "#B8CC66",
 	"%%content-bg%%": "#D3E8E8",
 	"%%data-bg%%" : "grey",
 	"%%header-bg%%" : "black"
