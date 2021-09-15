@@ -49,8 +49,8 @@ weatherTomorrow = weather['daily'][0]['weather'][0]['description']
 nightTheme = {
 	"%%logo-bg%%" : "#F5D14E" ,
 	"%%body-bg%%" : "#BDB3B3",
-	"%%local-bg%%": "#45335C",
-	"%%nav-bg%%" : "#3D0101",
+	"%%local-bg%%": "#3D0101",
+	"%%nav-bg%%" : "#45335C",
 	"%%bat-bg%%" : "#655353",
 	"%%bat-bar%%": "white",
 	"%%content-bg%%": "#D3E8E8",
