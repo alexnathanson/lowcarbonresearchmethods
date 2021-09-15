@@ -52,7 +52,7 @@ nightTheme = {
 	"%%local-bg%%": "#45335C",
 	"%%nav-bg%%" : "#3D0101",
 	"%%bat-bg%%" : "#655353",
-	"%%bat-bar%%": "#black",
+	"%%bat-bar%%": "black",
 	"%%content-bg%%": "#D3E8E8",
 	"%%data-bg%%" : "grey",
 	"%%header-bg%%" : "#312442",
