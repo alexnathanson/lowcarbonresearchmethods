@@ -146,7 +146,7 @@ body{
 #batBar{
 	width: %%BATTERY_BAR%%; 
 	float: left;
-	opacity: 25%;
+	opacity: 30%;
 	height: 100%;
 	background-color: var(--bat-bar);
 }
