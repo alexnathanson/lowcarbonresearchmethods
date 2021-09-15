@@ -55,7 +55,7 @@ nightTheme = {
 	"%%bat-bar%%": "#04BCBF",
 	"%%content-bg%%": "#D3E8E8",
 	"%%data-bg%%" : "grey",
-	"%%header-bg%%" : "black",
+	"%%header-bg%%" : "321F32",
 	"%%logo-src%%" : "assets/logo_black_on_clear.png",
 	"%%local-text%%" : "white"
 }
