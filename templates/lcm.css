@@ -616,9 +616,9 @@ body{
 		flex-direction: column;
 	}
 
-/*	#footer a {
-		color: val(--local-text);
-	}*/
+	#footer a {
+		color: var(--local-text);
+	}
 
 	.rRow{
 		display: flex;
