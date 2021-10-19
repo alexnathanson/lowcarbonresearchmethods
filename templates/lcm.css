@@ -227,6 +227,8 @@ body{
 .profileContainer{
 	display: flex;
 	flex-flow: row wrap;
+	justify-content: center;
+	align-content: center;
 }
 
 /*.rRow{
