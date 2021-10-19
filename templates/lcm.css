@@ -224,20 +224,20 @@ body{
   	align-items: center;
 }
 
-/*.profileContainer{
+.profileContainer{
 	display: flex;
-	flex-wrap: wrap;
-}*/
+	flex-flow: row wrap;
+}
 
-.rRow{
+/*.rRow{
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-content: center;
-}
+}*/
 
 .profile{
-	float: left;
+	/*float: left;*/
 	width: 25%;
 	margin: 1%;
 	padding: 5px;
@@ -259,6 +259,7 @@ body{
 	align-items: center;
 }
 
+/* is this necessary???*/
 #contentItemContainer{
 	display: flex;
 	flex-direction: column;
