@@ -259,20 +259,6 @@ body{
 	align-items: center;
 }
 
-/*.event{
-	margin-bottom: 50px;
-	padding: 10px;
-	width: 75%;	
-	background-color: var(--content-background);;
-}
-
-.event h2 {
-	border-bottom: solid;
-	border-width: 1px;
-}*/
-
-/*EVENT STUFF END*/
-
 #contentItemContainer{
 	display: flex;
 	flex-direction: column;
@@ -280,9 +266,7 @@ body{
 	align-items: center;
 }
 
-.contentItem{
-/*	border-top: solid;
-*/	
+.contentItem{	
 	margin-bottom: 50px;
 	padding: 10px;
 	width: 75%;	
@@ -650,10 +634,11 @@ body{
 	}
 
 	.contentItem{
-	/*	border-top: solid;
-	*/	
-		margin-bottom: 50px;
-		padding: 10px;
+		margin-bottom: 25px;
+		margin-top: 1%;
+		margin-right:  1%;
+		margin-left: 1%;
+		padding: 5px;
 		width: 90%;	
 		background-color: var(--content-background);
 	}
