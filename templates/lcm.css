@@ -225,10 +225,12 @@ body{
 }
 
 .profileContainer{
+	border-style: solid;
+	width: 75%;
 	display: flex;
 	flex-flow: row wrap;
-	justify-content: center;
-	align-content: center;
+	/*justify-content: center;
+	align-content: center;*/
 }
 
 /*.rRow{
@@ -239,7 +241,7 @@ body{
 }*/
 
 .profile{
-	/*float: left;*/
+	float: left;
 	width: 25%;
 	margin: 1%;
 	padding: 5px;
