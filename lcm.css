@@ -626,8 +626,7 @@ body{
 		align-content: center;
 	  	justify-content: space-evenly;
 		flex-direction: column;
-/*		background-color: black;
-*/	}
+	}
 
 	.rRow{
 		display: flex;
@@ -670,7 +669,7 @@ body{
 		margin-left: 1%;
 		margin-right: 1%;
 		padding: 5px;
-		width: 90%;	
+		width: 10%;	
 		background-color: var(--content-background);
 	}
 }
