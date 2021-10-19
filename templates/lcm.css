@@ -235,7 +235,7 @@ body{
 }
 
 .profile{
-	width: 30%;
+	width: 29%;
 	margin: 1%;
 	padding: 5px;
 	background-color: var(--content-background);
@@ -616,9 +616,7 @@ body{
 
 	.profileContainer{
 		border-style: solid;
-		width: 90%;
 		display: flex;
-		margin: 0;
 		flex-flow: row wrap;
 		justify-content: center;
 	/*	align-content: center;*/
