@@ -504,6 +504,11 @@ body{
 }
 
 @media (max-width: 1000px) {
+	
+	html {
+	  scroll-padding-top: calc(20vw + 22px);
+	}
+
 	body{
 		background-color: var(--body-background);
 	}
