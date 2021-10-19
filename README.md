@@ -7,6 +7,7 @@ An energy efficient design for the website of the Low Carbon Research Methods gr
 	* about page
 	* links at top of resources page
 	* researcher profiles
+	* header text
 * documentation
 * color theme switching 
 * adding page size data info
