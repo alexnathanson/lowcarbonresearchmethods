@@ -229,6 +229,7 @@ body{
 	width: 75%;
 	display: flex;
 	flex-flow: row wrap;
+	margin: 0;
 /*	justify-content: center;*/
 /*	align-content: center;*/
 }
@@ -617,6 +618,7 @@ body{
 		border-style: solid;
 		width: 90%;
 		display: flex;
+		margin: 0;
 		flex-flow: row wrap;
 		justify-content: center;
 	/*	align-content: center;*/
