@@ -48,6 +48,10 @@ graph:  grey (low opacityt);
 	--local-text: %%local-text%%;
 }
 
+html {
+  scroll-padding-top: height: calc((100vw * .030) + 22px); /* height of sticky header */
+}
+
 body{
 	background-color: var(--body-background);
 	margin: 0;
