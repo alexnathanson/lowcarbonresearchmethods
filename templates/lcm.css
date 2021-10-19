@@ -49,7 +49,7 @@ graph:  grey (low opacityt);
 }
 
 html {
-  scroll-padding-top: height: calc((100vw * .030) + 22px); /* height of sticky header */
+  scroll-padding-top: calc((100vw * .030) + 22px); /* height of sticky header */
 }
 
 body{
