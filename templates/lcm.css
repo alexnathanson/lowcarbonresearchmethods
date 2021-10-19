@@ -225,16 +225,14 @@ body{
 }
 
 .profileContainerContainer{
-	display:inline-block;
-	/*display: flex;
-	justify-content: center;*/
+	display: flex;
+	justify-content: center;
 	max-width: 75%;
-	align-content: center;
 	border-style: dotted;
 }
 .profileContainer{
 	border-style: solid;
-	width: auto;
+/*	width: auto;*/
 	display: inline-flex;
 	flex-flow: row wrap;
 /*	justify-content: center;*/
