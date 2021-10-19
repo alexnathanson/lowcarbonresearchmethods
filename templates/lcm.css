@@ -49,16 +49,14 @@ graph:  grey (low opacityt);
 }
 
 /*this allows on-page jumps to avoid hiding under the header*/
-/*html {
-  scroll-padding-top: calc((100vw * .030) + 22px/* + 200px*/); /* height of sticky header */
-}*/
+html {
+  scroll-padding-top: 3% + 22px /*calc((100vw * .030) + 22px)*/; /* height of sticky header */
+}
 
 body{
 	background-color: var(--body-background);
 	margin: 0;
 	font-family: Helvetica, sans-serif;
-  scroll-padding-top: calc((100vw * .030) + 22px/* + 200px*/); /* height of sticky header */
-
 }
 
 #headerContainer{
