@@ -50,7 +50,7 @@ graph:  grey (low opacityt);
 
 /*this allows on-page jumps to avoid hiding under the header*/
 html {
-  scroll-padding-top: calc(3% + 22px) /*calc((100vw * .030) + 22px)*/; /* height of sticky header */
+  scroll-padding-top: calc((100vw * .030) + 220px);
 }
 
 body{
