@@ -259,9 +259,7 @@ body{
 	align-items: center;
 }
 
-.event{
-/*	border-top: solid;
-*/	
+/*.event{
 	margin-bottom: 50px;
 	padding: 10px;
 	width: 75%;	
@@ -271,7 +269,7 @@ body{
 .event h2 {
 	border-bottom: solid;
 	border-width: 1px;
-}
+}*/
 
 /*EVENT STUFF END*/
 
@@ -651,7 +649,7 @@ body{
 		border-width: 1px;
 	}
 
-	.event{
+	.contentItem{
 	/*	border-top: solid;
 	*/	
 		margin-bottom: 50px;
