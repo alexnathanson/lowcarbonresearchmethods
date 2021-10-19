@@ -229,8 +229,8 @@ body{
 	width: 75%;
 	display: flex;
 	flex-flow: row wrap;
-	/*justify-content: center;
-	align-content: center;*/
+	justify-content: center;
+/*	align-content: center;*/
 }
 
 /*.rRow{
