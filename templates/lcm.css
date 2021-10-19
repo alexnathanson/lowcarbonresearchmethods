@@ -225,10 +225,10 @@ body{
 }
 
 .profileContainerContainer{
-	display: flex;
+/*	display: flex;
 	justify-content: center;
 	max-width: 75%;
-	border-style: dotted;
+	border-style: dotted;*/
 }
 .profileContainer{
 	border-style: solid;
