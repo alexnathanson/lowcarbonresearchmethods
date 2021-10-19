@@ -224,31 +224,17 @@ body{
   	align-items: center;
 }
 
-.profileContainerContainer{
-/*	display: flex;
-	justify-content: center;
-	max-width: 75%;
-	border-style: dotted;*/
-}
 .profileContainer{
 	border-style: solid;
-/*	width: auto;*/
+	width: 75%;
 	display: inline-flex;
 	flex-flow: row wrap;
 /*	justify-content: center;*/
 /*	align-content: center;*/
 }
 
-/*.rRow{
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-content: center;
-}*/
-
 .profile{
-/*	float: left;
-*/	width: 30%;
+	width: 30%;
 	margin: 1%;
 	padding: 5px;
 	background-color: var(--content-background);
