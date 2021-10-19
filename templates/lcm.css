@@ -227,9 +227,11 @@ body{
 .profileContainerContainer{
 	display: flex;
 	justify-content: center;
+	width: 75%;
 }
 .profileContainer{
 	border-style: solid;
+	width: auto;
 	display: flex;
 	flex-flow: row wrap;
 /*	justify-content: center;
@@ -245,7 +247,7 @@ body{
 
 .profile{
 /*	float: left;
-*/	width: 25%;
+*/	width: 33%;
 	margin: 1%;
 	padding: 5px;
 	background-color: var(--content-background);
