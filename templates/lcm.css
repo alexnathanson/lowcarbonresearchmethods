@@ -193,7 +193,7 @@ body{
 	align-items: center;
 	align-content: center;
   	justify-content: space-evenly;
-  	margin-bottom: calc(%%graphMaxPixels%% + 50px);
+  	margin-bottom: calc(%%graphMaxPixels%%px + 50px);
 }
 
 #footer-content{
