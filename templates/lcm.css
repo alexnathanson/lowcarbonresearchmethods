@@ -197,6 +197,10 @@ body{
   	justify-content: space-evenly;
 }
 
+#footer-content{
+	width: 90%;
+}
+
 #footer a {
 /*	text-decoration: none;
 */	/*color: var(--local-text);*/
