@@ -672,6 +672,10 @@ video {
 		width: 90%;	
 		background-color: var(--content-background);
 	}
+
+	.hideMedium{
+		display: inline;
+	}
 }
 
 @media (max-width: 600px) {
@@ -683,7 +687,4 @@ video {
 		display: inline;
 	}
 
-	.hideMedium{
-		display: inline;
-	}
 }
