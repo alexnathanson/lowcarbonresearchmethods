@@ -300,9 +300,9 @@ body{
 	margin: 1%;
 }
 
+/*limit video width to parent container*/
 video {
 	max-width: 100%; 
-    width: auto; 
 }
 
 
