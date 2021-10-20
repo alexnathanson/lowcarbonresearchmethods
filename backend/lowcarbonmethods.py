@@ -121,8 +121,7 @@ for h in range(24):
 #the default module size is 50 watts. if the server has a different sized module it will be scaled appropriately
 moduleSize = 50 * float(getRequest(getServer + "/api/v1/chargecontroller.php?systemInfo=wattage-scaler"))
 
-# NOTE: in the future the background graph could be mapped so whatever the range of numbers is is visually larger on the page
-
+# NOTE: in the future the background graph could be mapped so whatever the range of numbers is is visually larger on the page (currently hardcoded to 600px)
 powerPercentage = [str(100.0 * (p / moduleSize)) + "%" for p in avgPVPower]
 
 
@@ -132,6 +131,9 @@ for p in range(len(avgPVPower)):
 		swapDictionary['%%avgP'+ str(24 - p) + '%%'] = str(round(avgPVPower[p],1)) + 'W'
 	else:
 		swapDictionary['%%avgP'+ str(24 - p) + '%%'] = ''
+
+swapDictionary['%%graphMaxPixels%%'] = str(600.0 * (max(avgPVPower) / moduleSize))
+
 #add average power percentage to the dictionary
 for p in range(len(powerPercentage)):
 	swapDictionary['%%'+ str(24 - p) + 'H%%'] = powerPercentage[p]
