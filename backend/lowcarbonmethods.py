@@ -125,7 +125,14 @@ moduleSize = 50 * float(getRequest(getServer + "/api/v1/chargecontroller.php?sys
 
 powerPercentage = [str(100.0 * (p / moduleSize)) + "%" for p in avgPVPower]
 
-#add these average power stats to the dictionary
+
+#add average power to the dictionary
+for p in range(len(avgPVPower)):
+	if avgPVPower[p] > 0.0:
+		swapDictionary['%%avgP'+ str(24 - p) + '%%'] = avgPVPower[p]
+	else:
+		swapDictionary['%%avgP'+ str(24 - p) + '%%'] = ''
+#add average power percentage to the dictionary
 for p in range(len(powerPercentage)):
 	swapDictionary['%%'+ str(24 - p) + 'H%%'] = powerPercentage[p]
 

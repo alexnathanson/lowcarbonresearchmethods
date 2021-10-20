@@ -348,6 +348,11 @@ video {
 	box-sizing: border-box;
 }
 
+/*#hbarScale{
+	height: 600px;
+}
+*/
+
 #hbar1 {
 	height: %%1H%%;
 }
