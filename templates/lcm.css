@@ -208,7 +208,7 @@ body{
 
 
 .hideMinimize{
-	display: block;
+	display: inline;
 }
 
 .showMinimize{
@@ -653,6 +653,6 @@ body{
 	}
 
 	.showMinimize{
-		display: block;
+		display: inline;
 	}
 }
