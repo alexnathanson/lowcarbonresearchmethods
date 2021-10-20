@@ -17,9 +17,9 @@
     </div>
 
     <div id="header-local">
-        <div class="serverLocation">This is a solar powered server in Peterborough, Canada where the time is %%TIME%%.</div>
-        <div class="serverLocation">Today is: %%WEATHER_TODAY%%</div>
-        <div class="serverLocation">Tomorrow is: %%WEATHER_TOMORROW%%</div>
+        <div class="serverLocation">Served from a solar powered server in Peterborough, Canada</div>
+        <div class="serverLocation"><span class="hideMinimize">Today's weather: %%WEATHER_TODAY%%</span></div>
+        <div class="serverLocation"><span class="hideMinimize">Tomorrow's weather: %%WEATHER_TOMORROW%%</span></div>
     </div>
 
     <div id="menu"><a href="events.html#footer-nav">Menu</a></div>
@@ -172,13 +172,19 @@
         <div class="navLink"><a href="contact.html">Contact</a></div>
     </div>
 
-    <p>
-        This website is served from a solar powered server run by Low Carbon Research Methods, in collaboration with Solar Protocol, located in Trente, Canada
-    </p>
+    <div id="footer-content">
+        <p>
+            This website is served from a solar powered server run by the Low Carbon Research Methods group, in collaboration with Solar Protocol. The server is located in Peterborough, Canada. The design utilizes minimal design methods that lower the energy demands of the website. 
+        </p>
 
-    <p>
-        The design utilizes minimal design methods that lower the energy demands of the website. More info about the design of this site can be found <a href="index.html">here</a>.
-    </p>
+        <div>
+            <p>This data was last updated at %%TIME%% on %%DATE%% local server time.</p>
+            <p>Today's weather: %%WEATHER_TODAY%%</p>
+            <p>Tomorrow's weather: %%WEATHER_TOMORROW%%</p>
+            <p>Battery Charge: %%BATTERY%%</p>
+        </div>
+    </div>
+    
 </div>
 
 </div>
