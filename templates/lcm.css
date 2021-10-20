@@ -206,6 +206,15 @@ body{
 	display: none;
 }
 
+
+.hideMinimize{
+	display: block;
+}
+
+.showMinimize{
+	display: none;
+}
+
 /****CONTENT********/
 
 
@@ -638,7 +647,7 @@ body{
 	}
 }
 
-@media (max-width: 800px) {
+@media (max-width: 600px) {
 	.hideMinimize{
 		display: none;
 	}
