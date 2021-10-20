@@ -509,7 +509,6 @@ body{
 		display: flex;
 		align-items: center;
 	  	justify-content: space-evenly;
-	  	background-color: grey;
 	}
 
 	#header-nav {
