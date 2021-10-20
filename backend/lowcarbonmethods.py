@@ -22,7 +22,7 @@ def getRequest(url):
 		print(err)
 
 try:
-	battPercentage = str(100 * round(float(getRequest(getServer + "/api/v1/chargecontroller.php?value=battery-percentage")),2)) + "%"
+	battPercentage = str(round(100.0 * float(getRequest(getServer + "/api/v1/chargecontroller.php?value=battery-percentage")),2)) + "%"
 	battBar = battPercentage
 except:
 	battPercentage = "error"
