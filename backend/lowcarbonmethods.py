@@ -30,7 +30,7 @@ except:
 
 
 localTime = datetime.datetime.today().strftime("%I:%M %p")
-
+localDate = datetime.datetime.today().strftime("%m/%d/%y")
 
 # weatherToday = json.loads(getRequest("http://api.openweathermap.org/data/2.5/weather?q=Toronto&appid="+ openweatherapi))
 # print(weatherToday['weather'][0]['description'])
@@ -76,6 +76,7 @@ dayTheme = {
 
 swapDictionary = { 
 	"%%TIME%%": localTime,
+	"%%DATE%%": localDate,
 	"%%BATTERY%%": battPercentage,
 	"%%BATTERY_BAR%%": battBar,
 	"%%WEATHER_TODAY%%": weatherToday,
