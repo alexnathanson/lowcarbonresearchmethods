@@ -1,39 +1,30 @@
 /*
-https://coolors.co/82e6e8-d6d6d6-04bcbf-4aedf0-516666-d3e8e8
-Electric Blue:  82E6E8 - local info, time bar
-Light Gray: D6D6D6 - background;
-Maximum Blue GReen:  04BCBF; - bat bar
-Fluerescent Blue:  4AEDF0;
-Deep Space Sparkle:  516666; Nav
-Light cyan: D3E8E8; content
+NIGHT THEME
+"%%logo-bg%%" : "#F5D14E" ,
+"%%body-bg%%" : "#B3A8A8",#BDB3B3
+"%%local-bg%%": "#624884",
+"%%nav-bg%%" : "#312442",
+"%%bat-bg%%" : "#B5A3CC",
+"%%bat-bar%%": "black",
+"%%content-bg%%": "#D3E8E8",
+"%%data-bg%%" : "grey",
+"%%header-bg%%" : "#312442",
+"%%logo-src%%" : "assets/logo_black_on_clear.png",
+"%%local-text%%" : "white"
 
-lightgray:  bat back bar
-graph:  grey (low opacityt);
+DAY THEME
+"%%logo-bg%%" : "#321F32" ,
+"%%body-bg%%" : "#D8F3FD",
+"%%local-bg%%": "#FBE289",
+"%%nav-bg%%" : "#6E6235",
+"%%bat-bg%%" : "#EBCC5C",
+"%%bat-bar%%": "black",
+"%%content-bg%%": "#D3E8E8",
+"%%data-bg%%" : "grey",
+"%%header-bg%%" : "#FBE289",
+"%%logo-src%%" : "assets/logo_white_on_clear.png",
+"%%local-text%%" : "black"
 */
-
-/*:root{
-	--logo-background: black;
-	--body-background: #D6D6D6;
-	--local-background:  #82E6E8;
-	--nav-background: #516666;
-	--bat-background: lightgray;
-	--bat-bar: #04BCBF;
-	--content-background: #D3E8E8;
-	--data-background: grey;
-	--header-background: black;
-}*/
-
-/*:root{
-	--logo-background: black;
-	--body-background: #99BEC7;
-	--local-background:  #E3FC80;
-	--nav-background: #524C59;
-	--bat-background: lightgray;
-	--bat-bar: #04BCBF;
-	--content-background: #D3E8E8;
-	--data-background: grey;
-	--header-background: black;
-}*/
 
 :root{
 	--logo-background: %%logo-bg%%;
@@ -70,8 +61,8 @@ body{
 	position: relative;
 	top:  calc(100vw * -.04);/*version I sent Anne was 5% and 15% */
 	left: -4%;
-	width: 14%;
-	height: calc(100vw * .14);
+	width: 15%;
+	height: calc(100vw * .15);
 	z-index: 1;
     border-radius: 50%;
     background-color: var(--logo-background);
