@@ -303,7 +303,7 @@ body{
 /*limit video width to parent container*/
 video {
 	max-width: 100%; 
-   object-fit: inherit;
+   background: transparent url('assets/logo_whitebackground.jpg') 50% 50% / cover no-repeat ;
 }
 
 
