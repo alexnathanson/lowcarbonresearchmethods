@@ -56,7 +56,7 @@ nightTheme = {
 	"%%content-bg%%": "#D3E8E8",
 	"%%data-bg%%" : "grey",
 	"%%header-bg%%" : "#312442",
-	"%%logo-src%%" : "assets/logo_black_on_clear.png",
+	"%%logo-src%%" : "assets/logos/logo_black_on_clear.png",
 	"%%local-text%%" : "white"
 }
 
@@ -70,7 +70,7 @@ dayTheme = {
 	"%%content-bg%%": "#D3E8E8",
 	"%%data-bg%%" : "grey",
 	"%%header-bg%%" : "#FBE289",
-	"%%logo-src%%" : "assets/logo_white_on_clear.png",
+	"%%logo-src%%" : "assets/logos/logo_white_on_clear.png",
 	"%%local-text%%" : "black"
 }
 
