@@ -218,6 +218,10 @@ body{
 	display: none;
 }
 
+.hideMedium{
+	display: inline;
+}
+
 /****CONTENT********/
 
 
@@ -495,9 +499,9 @@ video {
 		border-width: 1px;
 		height: calc(100vw * .028);
 		padding: 1px;
-		left: 11%;
+		left: 12%;
 		top: 9px;
-		width: 89%;
+		width: 88%;
 		background-color: var(--local-background);
 		display: flex;
 		align-items: center;
@@ -519,6 +523,10 @@ video {
 		display: flex;
 		align-items: center;
 	  	justify-content: space-evenly;
+	}
+
+	.hideMedium{
+		display: none;
 	}
 }
 
@@ -672,6 +680,10 @@ video {
 	}
 
 	.showMinimize{
+		display: inline;
+	}
+
+	.hideMedium{
 		display: inline;
 	}
 }
