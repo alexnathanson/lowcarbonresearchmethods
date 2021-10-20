@@ -502,9 +502,9 @@ body{
 		border-width: 1px;
 		height: calc(100vw * .028);
 		padding: 1px;
-		left: 12%;
+		left: 11%;
 		top: 9px;
-		width: 88%;
+		width: 89%;
 		background-color: var(--local-background);
 		display: flex;
 		align-items: center;
