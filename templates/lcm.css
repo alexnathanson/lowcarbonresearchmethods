@@ -348,6 +348,12 @@ video {
 	box-sizing: border-box;
 }
 
+.hbar text{
+	font-size: 16px;
+	top:  -16px;
+	text-align: center;
+}
+
 /*#hbarScale{
 	height: 600px;
 }
