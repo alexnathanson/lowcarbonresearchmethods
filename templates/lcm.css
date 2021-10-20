@@ -349,6 +349,7 @@ video {
 }
 
 .hbar text{
+	position: relative;
 	font-size: 30px;
 	top:  -16px;
 }
