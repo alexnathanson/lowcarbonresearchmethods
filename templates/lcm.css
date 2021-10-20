@@ -61,8 +61,8 @@ body{
 	position: relative;
 	top:  calc(100vw * -.04);/*version I sent Anne was 5% and 15% */
 	left: -4%;
-	width: 14.5%;
-	height: calc(100vw * .145);
+	width: 14%;
+	height: calc(100vw * .14);
 	z-index: 1;
     border-radius: 50%;
     background-color: var(--logo-background);
