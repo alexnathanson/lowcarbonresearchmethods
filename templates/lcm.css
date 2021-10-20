@@ -59,7 +59,7 @@ body{
 
 #logoContainer{
 	position: relative;
-	top:  calc(100vw * -.04);/*version I sent Anne was 5% and 15% */
+	top:  calc(100vw * -.04);
 	left: -4%;
 	width: 14%;
 	height: calc(100vw * .14);
@@ -349,9 +349,8 @@ video {
 }
 
 .hbar text{
-	font-size: 16px;
+	font-size: 30px;
 	top:  -16px;
-	text-align: center;
 }
 
 /*#hbarScale{
