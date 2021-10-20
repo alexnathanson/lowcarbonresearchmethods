@@ -5,7 +5,6 @@ An energy efficient design for the website of the Low Carbon Research Methods gr
 ## To do
 * layout resizing
 	* header text
-	* cell phone view port
 * documentation
 * color theme switching 
 * adding page size data info

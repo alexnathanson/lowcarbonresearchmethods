@@ -637,3 +637,13 @@ body{
 		background-color: var(--content-background);
 	}
 }
+
+@media (max-width: 800px) {
+	.hideMinimize{
+		display: none;
+	}
+
+	.showMinimize{
+		display: block;
+	}
+}
