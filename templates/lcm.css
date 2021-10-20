@@ -348,7 +348,7 @@ video {
 	box-sizing: border-box;
 }
 
-.hbar text{
+.hbar span{
 	position: relative;
 	font-size: 30px;
 	top:  -16px;
