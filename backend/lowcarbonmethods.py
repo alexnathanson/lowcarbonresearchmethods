@@ -129,7 +129,7 @@ powerPercentage = [str(100.0 * (p / moduleSize)) + "%" for p in avgPVPower]
 #add average power to the dictionary
 for p in range(len(avgPVPower)):
 	if avgPVPower[p] > 0.0:
-		swapDictionary['%%avgP'+ str(24 - p) + '%%'] = avgPVPower[p]
+		swapDictionary['%%avgP'+ str(24 - p) + '%%'] = str(round(avgPVPower[p]),1) + 'W'
 	else:
 		swapDictionary['%%avgP'+ str(24 - p) + '%%'] = ''
 #add average power percentage to the dictionary
