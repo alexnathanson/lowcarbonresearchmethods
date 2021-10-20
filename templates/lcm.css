@@ -300,6 +300,10 @@ body{
 	margin: 1%;
 }
 
+video {
+	max-width: 100%; 
+    width: auto; 
+}
 
 
 /****HISTORY BAR****/
