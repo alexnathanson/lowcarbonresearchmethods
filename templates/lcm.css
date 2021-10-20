@@ -222,6 +222,10 @@ body{
 	display: inline;
 }
 
+.showSmall{
+	display: none;
+}
+
 /****CONTENT********/
 
 
@@ -674,6 +678,10 @@ video {
 	}
 
 	.hideMedium{
+		display: inline;
+	}
+
+	.showSmall{
 		display: inline;
 	}
 }
