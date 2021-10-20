@@ -155,9 +155,7 @@ body{
 
 .navLink {
 	top:  50%;
-/*	position: relative;
-*/	float: left;
-	/*padding: 5%;*/
+	float: left;
 	font-size: 30px;
 	font-weight: bold;
 }
@@ -505,6 +503,13 @@ body{
 		align-items: center;
 	  	justify-content: space-evenly;
 	}
+
+	.navLink {
+		top:  50%;
+		float: left;
+		font-size: 26px;
+		font-weight: bold;
+	}
 }
 
 @media (max-width: 1000px) {
@@ -522,6 +527,13 @@ body{
 		height: calc(100vw * .235);
 		padding-top: 0px;
 		padding-bottom: 0px;
+	}
+
+	.navLink {
+		top:  50%;
+		float: left;
+		font-size: 30px;
+		font-weight: bold;
 	}
 
 	#logoContainer{
