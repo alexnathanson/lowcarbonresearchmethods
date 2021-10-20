@@ -302,7 +302,6 @@ body{
 
 /*limit video width to parent container*/
 video {
-	preload:  none;
 	max-width: 100%; 
    	background: transparent url('assets/logo_whitebackground.jpg') 50% 50% / cover no-repeat ;
 }
