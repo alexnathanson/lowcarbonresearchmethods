@@ -209,10 +209,12 @@ body{
 	display: flex;
 	width: 75%;
 	align-content: center;
+	flex-flow: row;
 }
 
 #fDataBox{
 	border-style: solid;
+	border-width: 1px;
 	width: 33%;
 	padding: 10px;
 }
