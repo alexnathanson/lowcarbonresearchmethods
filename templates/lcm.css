@@ -608,7 +608,7 @@ video {
 		padding-bottom: 0px;
 		padding-left: 3%;
 		padding-right: 0px;
-/*		top:  calc(100vw * .0/*25*/);*/
+		top:  calc(100vw * .0/*25*/);
 		left: 17%;
 		width: calc(80% - 4em);
 		background-color: transparent;
