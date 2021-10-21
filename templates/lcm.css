@@ -208,11 +208,13 @@ body{
 #fDataContainer{
 	display: flex;
 	width: 75%;
+	align-content: center;
 }
 
 #fDataBox{
 	border-style: solid;
 	width: 33%;
+	padding: 10px;
 }
 
 
