@@ -208,13 +208,13 @@ body{
 #fDataContainer{
 	display: flex;
 	justify-content: space-around;
-		align-items: center;
+	align-items: center;
 	flex-direction: row;
+	border-style: solid;
+	border-width: 1px;
 }
 
 .fDataBox{
-	border-style: solid;
-	border-width: 1px;
 	width: 25%;
 	padding: 10px;
 	justify-content: center;
@@ -657,6 +657,21 @@ video {
 		color: var(--local-text);
 	}
 
+	#fDataContainer{
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		flex-direction: column;
+		border-style: solid;
+		border-width: 1px;
+	}
+
+	.fDataBox{
+		width: 75%;
+		padding: 10px;
+		justify-content: center;
+	}
+
 	#content{
 		position: absolute;
 		opacity: 85%;
@@ -676,6 +691,7 @@ video {
 		width: 100%;
 	/*	align-content: center;*/
 	}
+
 	.profile{
 		width: 90%;
 		margin: 1%;
