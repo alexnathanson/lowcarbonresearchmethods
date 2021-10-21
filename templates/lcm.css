@@ -192,8 +192,8 @@ body{
 	flex-direction: column;
 	align-items: center;
 	align-content: center;
-  	justify-content: space-evenly;
-  	margin-bottom: calc(%%graphMaxPixels%%px + 50px);
+	justify-content: space-evenly;
+	margin-bottom: calc(%%graphMaxPixels%%px + 50px);
 }
 
 #footer-content{
@@ -730,6 +730,23 @@ video {
 	  -o-transform: rotate(90deg);
 	  -ms-transform: rotate(90deg);
 	  transform: rotate(90deg);
+	}
+
+	#footer {
+		/*position: relative;
+		text-align: center;
+		padding-top: 10px;
+		padding-bottom: 20px;
+		bottom: 0;
+		width: 100%;
+		background-color: var(--local-background);
+		color:  var(--local-text);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		align-content: center;
+		justify-content: space-evenly;*/
+		margin-bottom: calc(%%graphMaxPixels%%px + 60px);
 	}
 
 }
