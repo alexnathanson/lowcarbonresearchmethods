@@ -212,7 +212,7 @@ body{
 	flex-flow: row;
 }
 
-#fDataBox{
+.fDataBox{
 	border-style: solid;
 	border-width: 1px;
 	width: 33%;
