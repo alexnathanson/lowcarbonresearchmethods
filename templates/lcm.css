@@ -724,7 +724,7 @@ video {
 		position: absolute;
 		font-size: 16px;
 		top:  0px;
-		transform-origin: 70% -40%;
+		transform-origin: 75% -40%;
 	-webkit-transform: rotate(90deg);
 	  -moz-transform: rotate(90deg);
 	  -o-transform: rotate(90deg);
