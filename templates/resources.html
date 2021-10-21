@@ -295,13 +295,25 @@
             This website is served from a solar powered server run by the Low Carbon Research Methods group, in collaboration with Solar Protocol. The server is located in Peterborough, Canada. The design utilizes minimal design methods that lower the energy demands of the website. 
         </p>
 
-        <div>
-            <p>This data was last updated at %%TIME%% on %%DATE%% local server time.</p>
-            <p>Today's weather: %%WEATHER_TODAY%%</p>
-            <p>Tomorrow's weather: %%WEATHER_TOMORROW%%</p>
-            <p>Battery Charge: %%BATTERY%%</p>
-            <p>The graph below shows PV power production over the last 24 hours.</p>
+        <p>
+            The weather and photovoltaic (PV) system data was last updated at %%TIME%% on %%DATE%% local server time.
+        </p>
+            
+        <div id="fDataContainer">
+            <div class="fDataBox">
+                <p>Today's weather: %%WEATHER_TODAY%%</p>
+                <p>Tomorrow's weather: %%WEATHER_TOMORROW%%</p>
+            </div>
+            <div class="fDataBox">
+                <p>Battery Charge: %%BATTERY%%</p>
+            </div>
+            <div class="fDataBox">
+                <p>Page Size: 71.75KB</p>
+            </div>
         </div>
+
+        <p>The graph below shows PV power production over the last 24 hours.</p>
+
     </div>
 
 </div>
