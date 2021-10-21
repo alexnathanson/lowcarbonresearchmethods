@@ -214,7 +214,8 @@ body{
 
 .fDataBox{
 	width: 25%;
-	padding: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
 	justify-content: center;
 }
 
@@ -664,7 +665,8 @@ video {
 
 	.fDataBox{
 		width: 75%;
-		padding: 10px;
+		padding-left: 10px;
+		padding-right: 10px;
 		justify-content: center;
 	}
 
