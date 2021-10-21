@@ -211,6 +211,7 @@ body{
 }
 
 #fDataBox{
+	border-style: solid;
 	width: 33%;
 }
 
