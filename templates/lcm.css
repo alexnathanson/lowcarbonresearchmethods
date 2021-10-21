@@ -205,6 +205,16 @@ body{
 */	/*color: var(--local-text);*/
 }
 
+#fDataContainer{
+	display: flex;
+	width: 75%;
+}
+
+#fDataBox{
+	width: 33%;
+}
+
+
 #footer-nav {
 	display: none;
 }
