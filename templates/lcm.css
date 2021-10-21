@@ -208,8 +208,9 @@ body{
 #fDataContainer{
 	display: flex;
 	width: 75%;
-	align-content: center;
-	flex-flow: row;
+	justify-content: space-around;
+		align-items: center;
+	flex-direction: row;
 }
 
 .fDataBox{
@@ -217,6 +218,7 @@ body{
 	border-width: 1px;
 	width: 33%;
 	padding: 10px;
+	justify-content: center;
 }
 
 
