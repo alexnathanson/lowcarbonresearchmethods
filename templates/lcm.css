@@ -207,7 +207,6 @@ body{
 
 #fDataContainer{
 	display: flex;
-	width: 75%;
 	justify-content: space-around;
 		align-items: center;
 	flex-direction: row;
@@ -216,7 +215,7 @@ body{
 .fDataBox{
 	border-style: solid;
 	border-width: 1px;
-	width: 33%;
+	width: 25%;
 	padding: 10px;
 	justify-content: center;
 }
