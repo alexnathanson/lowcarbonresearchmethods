@@ -1,3 +1,6 @@
 keys.py
 
 *.mp4
+
+*.sublime-project
+*.sublime-workspaces

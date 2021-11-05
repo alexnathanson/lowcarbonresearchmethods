@@ -115,7 +115,14 @@ for h in range(24):
 	#cast all to floats
 	collectVals = list(map(float, collectVals))
 
-	avgPVPower.append(sum(collectVals)/len(collectVals))	
+	#avoid zero division error
+
+	if len(collectVals) == 0:
+		avgPVPower.append(0)
+	else:
+		avgPVPower.append(sum(collectVals)/len(collectVals))
+	
+	#avgPVPower.append(sum(collectVals)/len(collectVals))	
 
 #scale the average power data to get a percentage
 #the default module size is 50 watts. if the server has a different sized module it will be scaled appropriately
