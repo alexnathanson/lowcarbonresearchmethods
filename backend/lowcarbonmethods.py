@@ -4,8 +4,8 @@ import requests
 import json
 from keys import *
 
-src = "/home/pi/local/www/lowcarbonresearchmethods/templates"
-dst = "/home/pi/local/www/lowcarbonresearchmethods"
+src = "/home/pi/local/www/templates"
+dst = "/home/pi/local/www/"
 
 getServer = "http://localhost"
 #getServer = "http://www.solarprotocol.net"
