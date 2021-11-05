@@ -26,3 +26,9 @@ An energy efficient design for the website of the Low Carbon Research Methods gr
     Sorry, your browser doesn't support embedded videos, but you can <a href="assets/Johan.mp4">download it here.</a>
 </video>`
 * Use this video syntax to avoid preloading/ autoloading
+
+## Installation
+
+<p>
+	Navigate to lowcarbonmethods direction and run this code to pull latest directory:
+	`git pull origin main` enter in pi command line.
