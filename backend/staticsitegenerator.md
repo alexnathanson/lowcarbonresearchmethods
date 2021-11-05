@@ -14,6 +14,8 @@ Output: Hi, my name is Alex.
 
 ## Templates
 
+
+
 ## Content
 
 Content files paths must match the template file paths
