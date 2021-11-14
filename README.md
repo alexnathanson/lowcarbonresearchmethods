@@ -30,5 +30,5 @@ An energy efficient design for the website of the Low Carbon Research Methods gr
 ## Installation
 
 <p>
-	Navigate to lowcarbonmethods direction and run this code to pull latest directory:
-	`git pull origin main` enter in pi command line.
+	Navigate to lowcarbonmethods direction (cd local/www from the pi interface) and run this code to pull latest directory:
+	`git pull origin main`
