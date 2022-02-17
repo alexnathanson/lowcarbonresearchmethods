@@ -2,5 +2,5 @@
 
 RewriteEngine on
 
-RewriteRule ^local $1 [L]
 RewriteRule ^local/(.*)$ $1
+RewriteRule ^local $1
