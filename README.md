@@ -1,6 +1,8 @@
 # lowcarbonresearchmethods
 An energy efficient design for the website of the Low Carbon Research Methods group
 
+This code based is not managed by Anne Pasek -> https://github.com/aepasek/lowcarbonresearchmethods
+
 ## Updating Pages
 
 <p>
@@ -26,3 +28,8 @@ An energy efficient design for the website of the Low Carbon Research Methods gr
     Sorry, your browser doesn't support embedded videos, but you can <a href="assets/Johan.mp4">download it here.</a>
 </video>`
 * Use this video syntax to avoid preloading/ autoloading
+
+
+## To Do
+
+* better error handling

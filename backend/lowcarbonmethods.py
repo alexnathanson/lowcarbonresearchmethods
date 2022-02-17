@@ -4,6 +4,7 @@ import requests
 import json
 from keys import *
 
+# these paths need to be updated when installed
 src = "/home/pi/local/www/lowcarbonresearchmethods/templates"
 dst = "/home/pi/local/www/lowcarbonresearchmethods"
 

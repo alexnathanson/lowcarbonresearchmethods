@@ -1,0 +1,6 @@
+# this is needed because the previous URL, before the virtual server was implemented, was lowcarbonmethods.com/local
+
+RewriteEngine on
+
+RewriteRule ^local $1 [L]
+RewriteRule ^local/(.*)$ $1

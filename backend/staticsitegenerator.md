@@ -36,7 +36,7 @@ External API call have been measure in advance and are added to that total.
 ## Automation
 
 `sudo crontab -e`
-`*/15 * * * * /use/bin/python3 /home/pi/local/www/lowcarbonresearchmethods/backend/lowcarbonmethods.py`
+`*/15 * * * * /use/bin/python3 /home/pi/local/www/backend/lowcarbonmethods.py`
 
 ## Future Development
 
