@@ -30,6 +30,8 @@ This code based is not managed by Anne Pasek -> https://github.com/aepasek/lowca
 * Use this video syntax to avoid preloading/ autoloading
 
 
-## To Do
+## Installation
 
-* better error handling
+<p>
+	Navigate to lowcarbonmethods direction (cd local/www from the pi interface) and run this code to pull latest directory:
+	`git pull origin main`
